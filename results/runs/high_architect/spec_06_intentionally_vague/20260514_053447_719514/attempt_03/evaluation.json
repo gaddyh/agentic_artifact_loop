@@ -1,0 +1,88 @@
+{
+  "score": 0.1,
+  "passed": false,
+  "field_grounding": [
+    {
+      "field_path": "system_name",
+      "value": "AI Second Brain",
+      "verdict": "explicitly_supported",
+      "source_quote": "I want an AI second brain for my life.",
+      "explanation": "The system name directly matches the raw specification."
+    },
+    {
+      "field_path": "goal",
+      "value": "Create an AI-driven tool that functions as a secondary cognitive assistant for personal life integration.",
+      "verdict": "explicitly_supported",
+      "source_quote": "I want an AI second brain for my life.",
+      "explanation": "The goal is a rephrasing of the idea of a 'second brain' which implies cognitive assistance."
+    },
+    {
+      "field_path": "users[0]",
+      "value": "Individual users seeking cognitive assistance tools",
+      "verdict": "explicitly_supported",
+      "source_quote": "I want an AI second brain for my life.",
+      "explanation": "The user type is explicitly supported because the request is for a personal AI assistant."
+    },
+    {
+      "field_path": "core_capabilities[0]",
+      "value": "Serve as a digital extension for storing personal experiences, thoughts, and ideas",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "An AI second brain implies extending memory and thought processes, which involves storing personal experiences and ideas."
+    },
+    {
+      "field_path": "main_components[0]",
+      "value": "User Interface for data input and interaction",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "User interaction requires an interface; thus, a UI is strongly implied."
+    },
+    {
+      "field_path": "assumptions[0]",
+      "value": "The user desires an AI tool specifically to complement and enhance their cognitive processing.",
+      "verdict": "explicitly_supported",
+      "source_quote": "I want an AI second brain for my life.",
+      "explanation": "This assumption directly reflects the fundamental requirement of wanting an AI 'second brain'."
+    },
+    {
+      "field_path": "open_questions[0]",
+      "value": "What types of data will the second brain store?",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "Determining the types of data to store is a reasonable open question given the nature of the system."
+    },
+    {
+      "field_path": "open_questions[1]",
+      "value": "How will privacy and security of stored data be handled?",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "While important, privacy and security are not mentioned or implied by the AI 'second brain' concept."
+    },
+    {
+      "field_path": "open_questions[2]",
+      "value": "What interaction modes will users have with the system (e.g., voice, text)?",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "Interaction modes are not specified or implied directly from the request for an AI second brain."
+    }
+  ],
+  "missing_requirements": [
+    "Include a clear strategy for memory assistance"
+  ],
+  "distorted_requirements": [],
+  "hallucinated_requirements": [
+    "How will privacy and security of stored data be handled?",
+    "What interaction modes will users have with the system (e.g., voice, text)?"
+  ],
+  "justified_inferences": [
+    "Serve as a digital extension for storing personal experiences, thoughts, and ideas",
+    "User Interface for data input and interaction",
+    "What types of data will the second brain store?"
+  ],
+  "weak_inferences": [
+    "How will privacy and security of stored data be handled?",
+    "What interaction modes will users have with the system (e.g., voice, text)?"
+  ],
+  "improvement_tip": "Ensure that every component, assumption, and open question is either explicitly supported by the raw spec or a necessary implication. Avoid including considerations like privacy and interaction modes unless these are mentioned or essential.",
+  "failure_reason": "Failed grounding gate: missing=1, distorted=0, hallucinated=2, score=0.1"
+}

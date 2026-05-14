@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['assumptions[0]', 'assumptions[1]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'assumptions[0]', 'value': 'WhatsApp API allows integration for budgeting functionalities', 'verdict': 'weakly_implied', 'explanation': 'The integration with WhatsApp is necessary but the availability of necessary API functionalities is assumed.'}, {'field': 'assumptions[1]', 'value': 'Family members are comfortable using WhatsApp for budgeting activities', 'verdict': 'weakly_implied', 'explanation': 'The assumption about user familiarity with WhatsApp for budgeting is implied but not explicit.'}]
+
+            Improvement tip:
+            Review any explicit user comfort and API capabilities requirements from stakeholders to guide assumptions more precisely.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

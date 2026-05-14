@@ -1,0 +1,31 @@
+{
+  "system_name": "Warehouse Monitoring System",
+  "goal": "To monitor refrigeration units and alert managers if temperatures drift outside safe ranges.",
+  "users": [
+    "Warehouse Managers",
+    "Maintenance Staff"
+  ],
+  "core_capabilities": [
+    "Monitor temperatures of refrigeration units continuously.",
+    "Compare current temperatures against defined safe temperature ranges.",
+    "Generate alerts if temperatures drift outside safe limits.",
+    "Provide a user interface for managers to view current and historical temperature data."
+  ],
+  "main_components": [
+    "Temperature Sensors: Deployed within refrigeration units to collect temperature data.",
+    "Monitoring Server: Centralized service to receive and process temperature data from all sensors.",
+    "Alert System: Component to generate and send alerts via email/SMS to managers.",
+    "Web Interface: User-facing component to display real-time and historical temperature data."
+  ],
+  "assumptions": [
+    "The warehouse is equipped with IoT-enabled temperature sensors capable of sending data to a central server.",
+    "Managers are reachable via email or SMS for alert notifications.",
+    "Safe temperature ranges for different units are predefined and configurable."
+  ],
+  "open_questions": [
+    "What specific communication protocols should be used between sensors and the monitoring server?",
+    "How frequently should temperature data be sampled and processed?",
+    "What are the escalation protocols if the primary alert is not acknowledged?",
+    "Is there a preference for cloud-based vs on-premise deployment for the monitoring server and data storage?"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "score": 0.5,
+  "passed": false,
+  "field_grounding": [
+    {
+      "field_path": "system_name",
+      "value": "Adaptive Classroom AI Tutor",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "The system name is a reasonable and necessary label for a 'classroom AI tutor that adapts question difficulty based on student frustration'."
+    },
+    {
+      "field_path": "goal",
+      "value": "To create an AI tutor system that adjusts question difficulty based on detected student frustration levels.",
+      "verdict": "explicitly_supported",
+      "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+      "explanation": "The goal is explicitly found in the raw specification."
+    },
+    {
+      "field_path": "users[0]",
+      "value": "Students",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "Given the context of a classroom AI tutor, students are strongly implied as users."
+    },
+    {
+      "field_path": "users[1]",
+      "value": "Teachers",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "There is no mention of teachers or their involvement in the specification."
+    },
+    {
+      "field_path": "core_capabilities[0]",
+      "value": "Assess student frustration during learning sessions.",
+      "verdict": "explicitly_supported",
+      "source_quote": "adapts question difficulty based on student frustration",
+      "explanation": "This capability is necessary to adapt question difficulty based on frustration."
+    },
+    {
+      "field_path": "core_capabilities[1]",
+      "value": "Adapt question difficulty dynamically based on student frustration.",
+      "verdict": "explicitly_supported",
+      "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+      "explanation": "Directly stated in the raw specification."
+    },
+    {
+      "field_path": "core_capabilities[2]",
+      "value": "Provide a personalized learning experience.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The raw specification does not mention personalized learning experience beyond adapting question difficulty."
+    },
+    {
+      "field_path": "main_components[0]",
+      "value": "Frustration Assessment Module: This component identifies student frustration levels.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "To fulfill the requirement of adapting questions based on frustration, identifying frustration is necessary."
+    },
+    {
+      "field_path": "main_components[1]",
+      "value": "Question Difficulty Adjustment Engine: This component adjusts the difficulty of questions presented to the student based on their current frustration level.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "Adjusting difficulty based on frustration is directly required, so this component is necessary."
+    },
+    {
+      "field_path": "main_components[2]",
+      "value": "Learning Management Interface: This component facilitates interaction with the student and presents questions accordingly.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "There is no mention or implication of a Learning Management Interface in the raw specification."
+    },
+    {
+      "field_path": "assumptions[0]",
+      "value": "The system can infer student frustration through some measurable indicators.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "The need to assess frustration implies the need for measurable indicators."
+    },
+    {
+      "field_path": "open_questions[0]",
+      "value": "What measurable indicators will the system use to assess student frustration?",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "The specification requires assessing frustration, thus identifying indicators is an open question."
+    }
+  ],
+  "missing_requirements": [
+    "A method for detecting student frustration is necessary but not methodologically addressed."
+  ],
+  "distorted_requirements": [],
+  "hallucinated_requirements": [
+    "users[1]",
+    "core_capabilities[2]",
+    "main_components[2]"
+  ],
+  "justified_inferences": [
+    "system_name",
+    "users[0]",
+    "main_components[0]",
+    "main_components[1]",
+    "assumptions[0]",
+    "open_questions[0]"
+  ],
+  "weak_inferences": [],
+  "improvement_tip": "Remove unsupported elements such as 'Teachers', 'personalized learning experience', and 'Learning Management Interface'. Ensure all HLD content is grounded or necessary for the explicit requirements in the specification.",
+  "failure_reason": "Failed grounding gate: missing=1, distorted=0, hallucinated=3, score=0.5"
+}

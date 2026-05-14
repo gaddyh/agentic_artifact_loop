@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['WhatsApp provides an API for integration with the assistant.', 'Google Calendar API is used for synchronization.']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'assumptions[2]', 'value': 'WhatsApp provides an API for integration with the assistant.', 'verdict': 'unsupported', 'explanation': "The specification does not mention the need for WhatsApp's API; it is a technical assumption."}, {'field': 'assumptions[3]', 'value': 'Google Calendar API is used for synchronization.', 'verdict': 'unsupported', 'explanation': 'The specification does not discuss API usage for synchronization; it is a technical assumption.'}, {'field': 'open_questions[0]', 'value': 'What level of personalization is required in the reminders sent to clients?', 'verdict': 'weakly_implied', 'explanation': 'The specification does not mention personalization but it is a reasonable open question for implementation.'}, {'field': 'open_questions[1]', 'value': "How will the system authenticate access to a user's Google Calendar?", 'verdict': 'weakly_implied', 'explanation': 'Authentication is not covered in the raw specification but is a reasonable technical open question.'}, {'field': 'open_questions[2]', 'value': 'What are the privacy and security measures that need to be in place for handling client data?', 'verdict': 'weakly_implied', 'explanation': 'Privacy and security are not mentioned but are reasonable concerns to address.'}]
+
+            Improvement tip:
+            Avoid including unsupported technical details as assumptions. Clearly separate weak inferences as open questions rather than assumptions in the HLD.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

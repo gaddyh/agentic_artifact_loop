@@ -1,0 +1,22 @@
+{
+  "system_name": "Adaptive Classroom AI Tutor",
+  "goal": "To create an AI tutor for the classroom that can adapt the difficulty of questions based on the student's level of frustration.",
+  "users": [
+    "Students"
+  ],
+  "core_capabilities": [
+    "Detect student frustration levels.",
+    "Adjust the difficulty of questions based on detected frustration."
+  ],
+  "main_components": [
+    "Frustration Detection Module: Identifies student frustration through inputs such as facial expressions, voice tone, or interaction patterns.",
+    "Difficulty Adjustment Engine: Changes the difficulty of questions in real-time based on the student's frustration level."
+  ],
+  "assumptions": [
+    "Students can interact with the AI tutor in real-time."
+  ],
+  "open_questions": [
+    "What specific indicators will be used to detect student frustration?",
+    "How will the system evaluate the effectiveness of its question difficulty adjustments on learning outcomes?"
+  ]
+}

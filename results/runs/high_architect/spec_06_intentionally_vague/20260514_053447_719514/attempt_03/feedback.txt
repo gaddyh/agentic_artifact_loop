@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            ['Include a clear strategy for memory assistance']
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['How will privacy and security of stored data be handled?', 'What interaction modes will users have with the system (e.g., voice, text)?']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'open_questions[1]', 'value': 'How will privacy and security of stored data be handled?', 'verdict': 'weakly_implied', 'explanation': "While important, privacy and security are not mentioned or implied by the AI 'second brain' concept."}, {'field': 'open_questions[2]', 'value': 'What interaction modes will users have with the system (e.g., voice, text)?', 'verdict': 'weakly_implied', 'explanation': 'Interaction modes are not specified or implied directly from the request for an AI second brain.'}]
+
+            Improvement tip:
+            Ensure that every component, assumption, and open question is either explicitly supported by the raw spec or a necessary implication. Avoid including considerations like privacy and interaction modes unless these are mentioned or essential.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

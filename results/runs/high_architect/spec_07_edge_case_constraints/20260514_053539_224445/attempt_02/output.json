@@ -1,0 +1,24 @@
+{
+  "system_name": "Therapist Scheduling System",
+  "goal": "Enable therapists to schedule appointments while ensuring client anonymity in all notifications related to schedule changes.",
+  "users": [
+    "Therapists"
+  ],
+  "core_capabilities": [
+    "Schedule appointments for therapists",
+    "Notify therapists of appointment schedule changes",
+    "Preserve client anonymity in all notifications"
+  ],
+  "main_components": [
+    "Scheduling Module",
+    "Notification System",
+    "Anonymization Layer"
+  ],
+  "assumptions": [
+    "System is used by therapists.",
+    "Notifications must not reveal client identities."
+  ],
+  "open_questions": [
+    "What methods will be used to anonymize client information in notifications?"
+  ]
+}

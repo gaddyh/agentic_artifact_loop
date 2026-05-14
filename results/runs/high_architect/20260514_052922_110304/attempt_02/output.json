@@ -1,0 +1,28 @@
+{
+  "system_name": "WhatsApp-Based Solo Provider Assistant",
+  "goal": "To assist solo service providers by enabling appointment booking, rescheduling, cancellations, and reminders, while syncing with Google Calendar, all via WhatsApp.",
+  "users": [
+    "Solo service providers",
+    "Clients of the service providers"
+  ],
+  "core_capabilities": [
+    "Book appointments via WhatsApp",
+    "Reschedule appointments via WhatsApp",
+    "Cancel appointments via WhatsApp",
+    "Send reminders to clients via WhatsApp",
+    "Sync appointments with Google Calendar"
+  ],
+  "main_components": [
+    "WhatsApp Integration Module",
+    "Appointment Management System",
+    "Reminder Notification System",
+    "Google Calendar Synchronization Module"
+  ],
+  "assumptions": [
+    "The solo service providers have access to both WhatsApp and Google Calendar.",
+    "Clients are familiar with using WhatsApp for communication."
+  ],
+  "open_questions": [
+    "How will the system handle conflicts when syncing appointments with Google Calendar?"
+  ]
+}

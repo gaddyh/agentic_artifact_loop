@@ -1,0 +1,24 @@
+{
+  "system_name": "Warehouse Temperature Monitoring System",
+  "goal": "To monitor refrigeration units and alert managers when temperatures drift outside predefined safe ranges.",
+  "users": [
+    "Warehouse Managers"
+  ],
+  "core_capabilities": [
+    "Monitor temperature of refrigeration units",
+    "Detect temperatures outside safe range",
+    "Send alerts to managers"
+  ],
+  "main_components": [
+    "Temperature Sensors",
+    "Temperature Monitoring Service",
+    "Alert Notification Service"
+  ],
+  "assumptions": [
+    "Temperature sensors are reliable and have necessary accuracy."
+  ],
+  "open_questions": [
+    "What are the exact safe temperature ranges for different refrigeration categories?",
+    "What methods should be used to alert the managers (e.g., email, SMS, notifications)?"
+  ]
+}

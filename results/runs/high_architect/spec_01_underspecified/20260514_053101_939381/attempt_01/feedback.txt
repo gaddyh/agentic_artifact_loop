@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            ['family budgeting']
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['users[1]', 'core_capabilities[1]', 'core_capabilities[2]', 'core_capabilities[4]', 'main_components[1]', 'main_components[3]', 'main_components[4]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'users[1]', 'value': 'Primary budget organizer', 'verdict': 'unsupported', 'explanation': "The raw spec does not mention or imply a 'Primary budget organizer' as a distinct role."}, {'field': 'core_capabilities[1]', 'value': 'Generate reports summarizing financial activity within the family', 'verdict': 'unsupported', 'explanation': 'The raw spec does not mention anything about generating reports.'}, {'field': 'core_capabilities[2]', 'value': 'Send and receive budget alerts and notifications', 'verdict': 'unsupported', 'explanation': 'Sending and receiving notifications is not mentioned or implied in the raw spec.'}, {'field': 'core_capabilities[4]', 'value': 'Provide a simple interface for categorizing expenses', 'verdict': 'unsupported', 'explanation': 'The raw spec does not mention categorizing expenses.'}, {'field': 'main_components[1]', 'value': 'Data Processing Backend', 'verdict': 'unsupported', 'explanation': 'The raw spec does not mention any backend for data processing.'}, {'field': 'main_components[3]', 'value': 'Alerts and Notification System', 'verdict': 'unsupported', 'explanation': 'The raw spec does not mention an alerts and notification system.'}, {'field': 'main_components[4]', 'value': 'Simple Report Generator', 'verdict': 'unsupported', 'explanation': 'The raw spec does not mention generating reports.'}, {'field': 'assumptions[3]', 'value': 'Privacy and security of financial data are maintained according to standard practices.', 'verdict': 'weakly_implied', 'explanation': 'While privacy is often considered, it is not specified or implied by the raw spec.'}]
+
+            Improvement tip:
+            Ensure all core capabilities and components are directly supported or clearly implied by the raw specification. Avoid adding unsupported features or roles.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

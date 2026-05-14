@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['core_capabilities[1]', 'main_components[1]', 'assumptions[0]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'goal', 'value': "Enhance the user's cognitive functions by acting as a secondary brain to manage personal knowledge and tasks.", 'verdict': 'weakly_implied', 'explanation': "The raw spec mentions an 'AI second brain', which implies some form of cognitive assistance, but does not specifically mention the management of personal knowledge and tasks."}, {'field': 'core_capabilities[0]', 'value': "Store and organize user's personal information and knowledge.", 'verdict': 'weakly_implied', 'explanation': "'AI second brain' suggests personal information organization, but this specific functionality isn't directly mentioned."}, {'field': 'core_capabilities[1]', 'value': "Enhance cognitive functions such as understanding and problem-solving based on user's inputs.", 'verdict': 'unsupported', 'explanation': 'The raw spec does not explicitly mention cognitive functions like understanding and problem-solving.'}, {'field': 'main_components[0]', 'value': 'Knowledge Storage System', 'verdict': 'weakly_implied', 'explanation': 'The need for data storage can be inferred but is not explicitly stated.'}, {'field': 'main_components[1]', 'value': 'Cognitive Enhancement Engine', 'verdict': 'unsupported', 'explanation': "The raw spec does not mention a 'Cognitive Enhancement Engine' or its necessity."}, {'field': 'assumptions[0]', 'value': 'The user wants to improve cognitive functions beyond mere organization.', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention improving cognitive functions beyond organization.'}]
+
+            Improvement tip:
+            Avoid assuming specific cognitive functions and components that aren't directly stated or absolutely necessary. Stick closely to the raw specification's requirements.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

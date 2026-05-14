@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 0.8
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['assumptions[0]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'assumptions[0]', 'value': 'Managers have appropriate means to receive alerts.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention how managers receive alerts, thus this assumption lacks grounding.'}]
+
+            Improvement tip:
+            Remove unsupported assumptions or ensure they are clearly marked as questions or assumptions based on the raw specification.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

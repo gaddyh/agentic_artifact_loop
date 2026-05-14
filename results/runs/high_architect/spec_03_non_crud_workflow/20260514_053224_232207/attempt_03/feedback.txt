@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            ['A method for detecting student frustration is necessary but not methodologically addressed.']
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['users[1]', 'core_capabilities[2]', 'main_components[2]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'users[1]', 'value': 'Teachers', 'verdict': 'unsupported', 'explanation': 'There is no mention of teachers or their involvement in the specification.'}, {'field': 'core_capabilities[2]', 'value': 'Provide a personalized learning experience.', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention personalized learning experience beyond adapting question difficulty.'}, {'field': 'main_components[2]', 'value': 'Learning Management Interface: This component facilitates interaction with the student and presents questions accordingly.', 'verdict': 'unsupported', 'explanation': 'There is no mention or implication of a Learning Management Interface in the raw specification.'}]
+
+            Improvement tip:
+            Remove unsupported elements such as 'Teachers', 'personalized learning experience', and 'Learning Management Interface'. Ensure all HLD content is grounded or necessary for the explicit requirements in the specification.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

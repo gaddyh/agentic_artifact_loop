@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['core_capabilities[2]', 'main_components[0]', 'assumptions[1]', 'assumptions[2]', 'open_questions[1]', 'open_questions[2]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'core_capabilities[2]', 'value': 'User authentication and profile management', 'verdict': 'unsupported', 'explanation': 'User authentication is not an explicit or strongly implied requirement from the raw spec.'}, {'field': 'main_components[0]', 'value': 'User Authentication and Management System', 'verdict': 'unsupported', 'explanation': 'The inclusion of an authentication system is not explicitly supported or strongly implied.'}, {'field': 'assumptions[1]', 'value': 'Registered users must authenticate to send messages, but messages can be searched without authentication.', 'verdict': 'unsupported', 'explanation': 'Authentication requirements are not explicitly mentioned or strongly implied in the raw specification.'}, {'field': 'assumptions[2]', 'value': 'Users need not be notified about their messages being publicly searchable.', 'verdict': 'unsupported', 'explanation': 'There is no mention or implication that users should not be notified about public searchability.'}, {'field': 'open_questions[0]', 'value': 'How to protect user privacy while allowing messages to be searchable?', 'verdict': 'contradicted', 'explanation': 'The specification does not mention user privacy concerns, only the public searchability requirement.'}, {'field': 'open_questions[1]', 'value': 'Should there be any restrictions on who can search the messages?', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention restrictions on searching messages.'}, {'field': 'open_questions[2]', 'value': 'Will users have any control over the visibility of their messages?', 'verdict': 'unsupported', 'explanation': 'The specification requires messages to be publicly searchable without mention of user control.'}]
+
+            Improvement tip:
+            Focus on the core requirement of messages being publicly searchable and avoid adding assumptions or open questions that are not grounded in the specification.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

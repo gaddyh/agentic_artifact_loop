@@ -1,0 +1,197 @@
+{
+  "score": 0.35,
+  "passed": false,
+  "field_grounding": [
+    {
+      "field_path": "system_name",
+      "value": "Adaptive Classroom AI Tutor",
+      "verdict": "explicitly_supported",
+      "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+      "explanation": "The system name reflects the purpose and scope described in the specification."
+    },
+    {
+      "field_path": "goal",
+      "value": "To provide a personalized tutoring experience by adjusting the difficulty of questions based on detected student frustration levels, enhancing the learning process in real-time.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "Personalization through adaptation to frustration is strongly implied by the need to adapt question difficulty based on student frustration."
+    },
+    {
+      "field_path": "users[0]",
+      "value": "Students",
+      "verdict": "explicitly_supported",
+      "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+      "explanation": "Students are directly involved as they are the ones experiencing adaptation of questions."
+    },
+    {
+      "field_path": "users[1]",
+      "value": "Teachers",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention teachers as users or beneficiaries of the system."
+    },
+    {
+      "field_path": "core_capabilities[0]",
+      "value": "Detect student frustration in real-time.",
+      "verdict": "explicitly_supported",
+      "source_quote": "...adapts question difficulty based on student frustration.",
+      "explanation": "Detecting frustration is required to adapt question difficulty."
+    },
+    {
+      "field_path": "core_capabilities[1]",
+      "value": "Adjust question difficulty based on detected frustration levels.",
+      "verdict": "explicitly_supported",
+      "source_quote": "...adapts question difficulty based on student frustration.",
+      "explanation": "The core capability is directly mentioned in the specification."
+    },
+    {
+      "field_path": "core_capabilities[2]",
+      "value": "Provide a seamless tutoring experience with a variety of question types and subjects.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention the need for a variety of question types and subjects or seamless experience."
+    },
+    {
+      "field_path": "core_capabilities[3]",
+      "value": "Track student performance and progress.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "Tracking performance and progress is not mentioned in the specification."
+    },
+    {
+      "field_path": "core_capabilities[4]",
+      "value": "Offer teachers insights into individual and class performance.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention providing insights or analytics to teachers."
+    },
+    {
+      "field_path": "main_components[0]",
+      "value": "Frustration Detection Module: Analyzes student interactions and possibly camera feeds/audio to detect frustration levels.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "A module to detect frustration is needed to adapt question difficulty."
+    },
+    {
+      "field_path": "main_components[1]",
+      "value": "Question Difficulty Adjustment Module: Modifies the difficulty level of questions based on inputs from the frustration detection module.",
+      "verdict": "explicitly_supported",
+      "source_quote": "...adapts question difficulty based on student frustration.",
+      "explanation": "Adjusting question difficulty is a direct requirement."
+    },
+    {
+      "field_path": "main_components[2]",
+      "value": "Learning Content Database: A repository of questions and learning materials categorized by subject and difficulty.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention a learning content database."
+    },
+    {
+      "field_path": "main_components[3]",
+      "value": "User Interface: Provides an interactive experience for students to receive questions and submit answers.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "A user interface is necessary for students to interact with the tutor, even though it's not explicitly mentioned."
+    },
+    {
+      "field_path": "main_components[4]",
+      "value": "Analytics and Reporting Dashboard: Offers teachers insight into student performance and class trends.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention providing analytics or a dashboard for teachers."
+    },
+    {
+      "field_path": "main_components[5]",
+      "value": "Integration Layer: Facilitates communication between modules and the storage of student data.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention any integration or data storage details."
+    },
+    {
+      "field_path": "assumptions[0]",
+      "value": "Student frustration can be detected accurately through available data sensors or interaction analytics.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "Detecting frustration is necessary, implying some means of detection is assumed."
+    },
+    {
+      "field_path": "assumptions[1]",
+      "value": "There are reliable metrics to adjust question difficulty appropriately.",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "Adjusting difficulty requires reliable metrics, which is implied by the requirement."
+    },
+    {
+      "field_path": "assumptions[2]",
+      "value": "Teachers will have access to an interface to review student progress and system recommendations.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention teacher interfaces or reviewing capabilities."
+    },
+    {
+      "field_path": "assumptions[3]",
+      "value": "Students have access to devices that support the user interface for interaction with the AI tutor.",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "Implied assumption as remote interaction requires device access but not explicitly mentioned."
+    },
+    {
+      "field_path": "open_questions[0]",
+      "value": "How will the system initially calibrate each student's frustration levels accurately?",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "Calibration is a logical question arising from detecting frustration but not mentioned."
+    },
+    {
+      "field_path": "open_questions[1]",
+      "value": "What privacy measures will be in place considering the potential use of cameras or microphones?",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "Using cameras/microphones for detecting frustration raises privacy concerns, logically implied."
+    },
+    {
+      "field_path": "open_questions[2]",
+      "value": "How quickly should the system react to changes in detected frustration levels to adjust difficulty without disrupting the learning process?",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "Timing of adjustments affects learning experience; reasonable but not explicit or strongly implied."
+    },
+    {
+      "field_path": "open_questions[3]",
+      "value": "What fallback mechanisms will be implemented if frustration detection fails or data is insufficient?",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "Contingency planning is logical but not mentioned or strongly implied."
+    },
+    {
+      "field_path": "open_questions[4]",
+      "value": "Is there scope for integrating this system with existing learning management systems?",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The specification does not mention integration with other systems."
+    }
+  ],
+  "missing_requirements": [],
+  "distorted_requirements": [],
+  "hallucinated_requirements": [
+    "users[1]",
+    "core_capabilities[2]",
+    "core_capabilities[3]",
+    "core_capabilities[4]",
+    "main_components[2]",
+    "main_components[4]",
+    "main_components[5]",
+    "assumptions[2]",
+    "open_questions[4]"
+  ],
+  "justified_inferences": [],
+  "weak_inferences": [
+    "main_components[3]",
+    "assumptions[3]",
+    "open_questions[0]",
+    "open_questions[2]",
+    "open_questions[3]"
+  ],
+  "improvement_tip": "Focus on aligning all components and users with the explicit requirements of the specification. Remove unsupported elements like teacher interfaces, analytics, and integration aspects unless they are derived from the specification.",
+  "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=9, score=0.35"
+}

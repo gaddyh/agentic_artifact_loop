@@ -1,0 +1,84 @@
+{
+  "score": 0.3,
+  "passed": false,
+  "field_grounding": [
+    {
+      "field_path": "system_name",
+      "value": "AI Second Brain",
+      "verdict": "explicitly_supported",
+      "source_quote": "I want an AI second brain for my life.",
+      "explanation": "The term 'AI Second Brain' is directly mentioned in the raw specification."
+    },
+    {
+      "field_path": "goal",
+      "value": "Enhance the user's cognitive functions by acting as a secondary brain to manage personal knowledge and tasks.",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "The raw spec mentions an 'AI second brain', which implies some form of cognitive assistance, but does not specifically mention the management of personal knowledge and tasks."
+    },
+    {
+      "field_path": "users[0]",
+      "value": "Individual User",
+      "verdict": "explicitly_supported",
+      "source_quote": "I want an AI second brain for my life.",
+      "explanation": "The raw specification implies a single individual user as the demander of the second brain."
+    },
+    {
+      "field_path": "core_capabilities[0]",
+      "value": "Store and organize user's personal information and knowledge.",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "'AI second brain' suggests personal information organization, but this specific functionality isn't directly mentioned."
+    },
+    {
+      "field_path": "core_capabilities[1]",
+      "value": "Enhance cognitive functions such as understanding and problem-solving based on user's inputs.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The raw spec does not explicitly mention cognitive functions like understanding and problem-solving."
+    },
+    {
+      "field_path": "main_components[0]",
+      "value": "Knowledge Storage System",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "The need for data storage can be inferred but is not explicitly stated."
+    },
+    {
+      "field_path": "main_components[1]",
+      "value": "Cognitive Enhancement Engine",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The raw spec does not mention a 'Cognitive Enhancement Engine' or its necessity."
+    },
+    {
+      "field_path": "assumptions[0]",
+      "value": "The user wants to improve cognitive functions beyond mere organization.",
+      "verdict": "unsupported",
+      "source_quote": null,
+      "explanation": "The raw specification does not mention improving cognitive functions beyond organization."
+    },
+    {
+      "field_path": "open_questions[0]",
+      "value": "What specific cognitive functions does the user want enhanced beyond organization?",
+      "verdict": "explicitly_supported",
+      "source_quote": "I want an AI second brain for my life.",
+      "explanation": "The open question is valid as the raw spec leaves the specifics of cognitive enhancement undefined."
+    }
+  ],
+  "missing_requirements": [],
+  "distorted_requirements": [],
+  "hallucinated_requirements": [
+    "core_capabilities[1]",
+    "main_components[1]",
+    "assumptions[0]"
+  ],
+  "justified_inferences": [],
+  "weak_inferences": [
+    "goal",
+    "core_capabilities[0]",
+    "main_components[0]"
+  ],
+  "improvement_tip": "Avoid assuming specific cognitive functions and components that aren't directly stated or absolutely necessary. Stick closely to the raw specification's requirements.",
+  "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=3, score=0.3"
+}

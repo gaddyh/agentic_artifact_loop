@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['users[1]', 'core_capabilities[3]', 'main_components[3]', 'assumptions[1]', 'open_questions[3]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'users[1]', 'value': 'Maintenance Staff', 'verdict': 'unsupported', 'explanation': "The raw specification does not mention 'Maintenance Staff' as users. Their inclusion is unsupported."}, {'field': 'core_capabilities[3]', 'value': 'Provide a user interface for managers to view current and historical temperature data.', 'verdict': 'weakly_implied', 'explanation': 'While a user interface may be useful, it is not strictly required nor strongly implied by the raw specification.'}, {'field': 'main_components[2]', 'value': 'Alert System: Component to generate and send alerts via email/SMS to managers.', 'verdict': 'weakly_implied', 'explanation': 'While an alert system is necessary, the specification does not specify email/SMS for sending alerts.'}, {'field': 'main_components[3]', 'value': 'Web Interface: User-facing component to display real-time and historical temperature data.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention the need for a web interface to display temperature data.'}, {'field': 'assumptions[1]', 'value': 'Managers are reachable via email or SMS for alert notifications.', 'verdict': 'unsupported', 'explanation': 'There is no mention of email or SMS alerts in the raw specification.'}, {'field': 'open_questions[2]', 'value': 'What are the escalation protocols if the primary alert is not acknowledged?', 'verdict': 'weakly_implied', 'explanation': 'Escalation protocols are not mentioned in the specification, making this a weak inference.'}, {'field': 'open_questions[3]', 'value': 'Is there a preference for cloud-based vs on-premise deployment for the monitoring server and data storage?', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention anything regarding deployment preferences.'}]
+
+            Improvement tip:
+            Remove unsupported users, components, and assumptions. Clarify and justify the necessity of user interface and alerting methods within the raw specification context.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

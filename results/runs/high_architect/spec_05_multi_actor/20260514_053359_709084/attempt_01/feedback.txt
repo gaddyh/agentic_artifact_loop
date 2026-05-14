@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['system_name', 'main_components[5]: Notification and Reminder System', 'main_components[6]: Payment Gateway Integration', 'assumptions[1]: Teachers are responsible for maintaining their own availability schedules.', 'assumptions[2]: There exists a secure payment method integrated into the platform to handle transactions.', 'open_questions[0]: Will there be an upfront subscription fee for teachers to use the platform?', 'open_questions[1]: Is there any specific geolocation functionality needed for service area restrictions?', 'open_questions[2]: What payment methods will be supported in the payment gateway?', 'open_questions[3]: How detailed do teacher profiles need to be?']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'system_name', 'value': 'MusicHaven Marketplace', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention a specific system name.'}, {'field': 'main_components[5]', 'value': 'Notification and Reminder System', 'verdict': 'weakly_implied', 'explanation': 'While potentially useful, notifications and reminders are not explicitly or strongly implied by the requirements.'}, {'field': 'main_components[6]', 'value': 'Payment Gateway Integration', 'verdict': 'unsupported', 'explanation': 'Payment integration is not mentioned nor implied in the raw specification.'}, {'field': 'assumptions[1]', 'value': 'Teachers are responsible for maintaining their own availability schedules.', 'verdict': 'unsupported', 'explanation': 'This is not mentioned or implied in the raw specification.'}, {'field': 'assumptions[2]', 'value': 'There exists a secure payment method integrated into the platform to handle transactions.', 'verdict': 'unsupported', 'explanation': 'Integration of a payment method is not mentioned or implied in the raw specification.'}, {'field': 'open_questions[0]', 'value': 'Will there be an upfront subscription fee for teachers to use the platform?', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention fees or subscriptions for teachers.'}, {'field': 'open_questions[1]', 'value': 'Is there any specific geolocation functionality needed for service area restrictions?', 'verdict': 'unsupported', 'explanation': 'Geolocation functionality is not mentioned or implied by the raw specification.'}, {'field': 'open_questions[2]', 'value': 'What payment methods will be supported in the payment gateway?', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention payment methods or gateways.'}, {'field': 'open_questions[3]', 'value': 'How detailed do teacher profiles need to be?', 'verdict': 'unsupported', 'explanation': 'The raw specification does not specify the level of detail for teacher profiles.'}]
+
+            Improvement tip:
+            Remove unsupported and weak inferences from the HLD to ensure alignment with the raw specification. Focus only on the requirements explicitly mentioned or strongly implied, such as connecting teachers and students for recurring music lessons with a rating system.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

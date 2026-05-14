@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            ['The ability to improve overall cognition or understanding, not just memory and organization.']
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['users[1]', 'core_capabilities[5]', 'main_components[3]', 'main_components[4]', 'assumptions[0]', 'assumptions[1]', 'assumptions[2]', 'open_questions[0]', 'open_questions[1]', 'open_questions[2]', 'open_questions[3]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'users[0]', 'value': 'Individual Users', 'verdict': 'weakly_implied', 'explanation': "The raw spec only mentions 'my life', suggesting individual users but not explicitly. This is a weak implication."}, {'field': 'users[1]', 'value': 'Professionals', 'verdict': 'unsupported', 'explanation': "'Professionals' are not mentioned or implied in the raw specification, which only mentions a personal 'second brain'."}, {'field': 'core_capabilities[3]', 'value': 'Provide reminders and prompts for important tasks or deadlines.', 'verdict': 'weakly_implied', 'explanation': 'While reminders can be a feature of productivity tools, they are not directly specified or strongly implied.'}, {'field': 'core_capabilities[5]', 'value': 'Integrate with existing digital tools for seamless data transfer, such as calendars and task managers.', 'verdict': 'unsupported', 'explanation': 'Integration with other digital tools is not mentioned or implied in the raw specification.'}, {'field': 'main_components[3]', 'value': 'Reminder and Alert System', 'verdict': 'unsupported', 'explanation': 'Reminders and alerts are not supported in the specification as they are not mentioned or necessary.'}, {'field': 'main_components[4]', 'value': 'Integration Interface', 'verdict': 'unsupported', 'explanation': 'An integration interface is not grounded in the raw spec as there is no mention of external integration.'}, {'field': 'assumptions[0]', 'value': 'The system will be cloud-based to accommodate data storage and processing needs.', 'verdict': 'unsupported', 'explanation': 'Cloud-based architecture is neither mentioned nor implied in the raw spec.'}, {'field': 'assumptions[1]', 'value': 'Users will primarily interact with the system through a mobile app or web application.', 'verdict': 'unsupported', 'explanation': 'The interaction methods (mobile or web) are not mentioned or implied in the raw spec.'}, {'field': 'assumptions[2]', 'value': 'Privacy and data security are critical, and measures must be in place to protect user data.', 'verdict': 'unsupported', 'explanation': 'Privacy and security are important but are not mentioned or implied in the raw spec.'}, {'field': 'assumptions[3]', 'value': 'The system will leverage existing AI technologies for natural language processing and machine learning.', 'verdict': 'weakly_implied', 'explanation': "While leveraging AI technologies is reasonable, it's not explicitly supported or strongly implied."}, {'field': 'open_questions[0]', 'value': 'What specific integrations with other digital tools will be most beneficial for users?', 'verdict': 'unsupported', 'explanation': 'The need for integrations is unsupported by the raw spec, which mentions nothing about such needs.'}, {'field': 'open_questions[1]', 'value': 'What privacy measures will be required and how will user data be protected during storage and processing?', 'verdict': 'unsupported', 'explanation': "This question assumes privacy measures are required, which isn't supported by the raw spec."}, {'field': 'open_questions[2]', 'value': 'Will the system need offline capabilities, and if so, how will these be implemented?', 'verdict': 'unsupported', 'explanation': 'Offline capabilities are not mentioned or strongly implied in the raw spec.'}, {'field': 'open_questions[3]', 'value': "How will the system's AI be customized to cater to individual user preferences and improve over time?", 'verdict': 'unsupported', 'explanation': 'Customization and improvement over time are not discussed or implied in the raw spec.'}]
+
+            Improvement tip:
+            Make sure all capabilities, components, and assumptions preserve the original specification's focus and do not introduce ungrounded elements.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

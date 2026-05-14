@@ -1,0 +1,34 @@
+{
+  "system_name": "MusicHaven Marketplace",
+  "goal": "To provide a platform that connects freelance music teachers with students for recurring music lessons and allows for ratings of those interactions.",
+  "users": [
+    "Freelance Music Teachers",
+    "Students"
+  ],
+  "core_capabilities": [
+    "Allow freelance music teachers to create profiles and list their services.",
+    "Enable students to search for and book music teachers based on specific criteria.",
+    "Support recurring lesson scheduling and management between teachers and students.",
+    "Provide a rating system for students to rate teachers after each lesson."
+  ],
+  "main_components": [
+    "User Management System",
+    "Teacher Profile and Service Listing",
+    "Search and Match Engine",
+    "Booking and Scheduling Module",
+    "Rating and Review System",
+    "Notification and Reminder System",
+    "Payment Gateway Integration"
+  ],
+  "assumptions": [
+    "Users have internet access to utilize the platform.",
+    "Teachers are responsible for maintaining their own availability schedules.",
+    "There exists a secure payment method integrated into the platform to handle transactions."
+  ],
+  "open_questions": [
+    "Will there be an upfront subscription fee for teachers to use the platform?",
+    "Is there any specific geolocation functionality needed for service area restrictions?",
+    "What payment methods will be supported in the payment gateway?",
+    "How detailed do teacher profiles need to be?"
+  ]
+}

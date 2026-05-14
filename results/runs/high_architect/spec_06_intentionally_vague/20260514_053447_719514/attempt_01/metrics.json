@@ -1,0 +1,20 @@
+{
+  "total_fields": 24,
+  "explicit_support_rate": 0.041666666666666664,
+  "strong_inference_rate": 0.375,
+  "weak_inference_rate": 0.125,
+  "unsupported_rate": 0.4583333333333333,
+  "contradiction_rate": 0.0,
+  "source_quote_coverage": 0.041666666666666664,
+  "core_capability_coverage": 0.6666666666666666,
+  "hallucination_count": 11,
+  "missing_count": 1,
+  "distortion_count": 0,
+  "weak_confirmed_claims_count": 2,
+  "weak_assumption_count": 1,
+  "weak_open_question_count": 0,
+  "grounding_score": 0.3916666666666666,
+  "preservation_score": 0.0,
+  "risk_score": 1.0,
+  "blocking_failure": true
+}

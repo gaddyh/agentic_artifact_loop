@@ -1,0 +1,26 @@
+{
+  "system_name": "WhatsApp Family Budgeting App",
+  "goal": "To provide families with an easy way to manage and track their budget through WhatsApp.",
+  "users": [
+    "Family members"
+  ],
+  "core_capabilities": [
+    "Budget tracking and visualization",
+    "Expense categorization",
+    "Multi-user collaboration for families",
+    "WhatsApp message-based interface for input and output"
+  ],
+  "main_components": [
+    "WhatsApp Integration Module",
+    "Budget Management Core",
+    "Expense Categorization Engine",
+    "User Interface & Messaging Handler"
+  ],
+  "assumptions": [
+    "WhatsApp API allows basic integration functionalities."
+  ],
+  "open_questions": [
+    "What specific budgeting features are most important to target users?",
+    "What data privacy measures are necessary for handling budget data through WhatsApp?"
+  ]
+}

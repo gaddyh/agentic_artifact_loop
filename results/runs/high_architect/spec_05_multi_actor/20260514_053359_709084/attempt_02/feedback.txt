@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 0.9
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['main_components[3]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'main_components[3]', 'value': 'Search and Discovery Mechanism', 'verdict': 'unsupported', 'explanation': 'The raw specification does not mention or imply a search and discovery mechanism.'}, {'field': 'assumptions[0]', 'value': 'Teachers and students sign up voluntarily for the platform.', 'verdict': 'weakly_implied', 'explanation': 'The assumption of voluntary signup is not directly stated or strongly implied.'}]
+
+            Improvement tip:
+            Remove unsupported components like 'Search and Discovery Mechanism' or justify them with strong implications from the raw spec. Ensure all assumptions are at least weakly implied or justified by the spec.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

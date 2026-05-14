@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['core_capabilities[1]', 'core_capabilities[2]', 'main_components[2]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'core_capabilities[1]', 'value': 'Expense categorization', 'verdict': 'weakly_implied', 'explanation': "While categorization is logical for budgeting, it isn't explicitly mentioned or strictly necessary just based on the raw specification."}, {'field': 'core_capabilities[2]', 'value': 'Multi-user collaboration for families', 'verdict': 'weakly_implied', 'explanation': 'Collaboration could be inferred, but it’s not directly implied by the specification which only mentions a single budgeting app for families.'}, {'field': 'main_components[2]', 'value': 'Expense Categorization Engine', 'verdict': 'weakly_implied', 'explanation': 'Useful for budgeting but not explicitly or strictly necessary based on the specification.'}]
+
+            Improvement tip:
+            Ensure all core capabilities and components are either explicitly grounded or strongly implied by the initial specification.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

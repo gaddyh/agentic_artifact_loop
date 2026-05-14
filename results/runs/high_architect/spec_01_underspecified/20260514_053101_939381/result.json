@@ -1,0 +1,721 @@
+{
+  "input": {
+    "text": "Build a family budgeting app for WhatsApp."
+  },
+  "final_output": {
+    "system_name": "WhatsApp Family Budgeting App",
+    "goal": "To provide families with an easy way to manage and track their budget through WhatsApp.",
+    "users": [
+      "Family members"
+    ],
+    "core_capabilities": [
+      "Budget tracking and visualization",
+      "Expense categorization",
+      "Multi-user collaboration for families",
+      "WhatsApp message-based interface for input and output"
+    ],
+    "main_components": [
+      "WhatsApp Integration Module",
+      "Budget Management Core",
+      "Expense Categorization Engine",
+      "User Interface & Messaging Handler"
+    ],
+    "assumptions": [
+      "WhatsApp API allows basic integration functionalities."
+    ],
+    "open_questions": [
+      "What specific budgeting features are most important to target users?",
+      "What data privacy measures are necessary for handling budget data through WhatsApp?"
+    ]
+  },
+  "final_evaluation": {
+    "score": 0.5,
+    "passed": false,
+    "field_grounding": [
+      {
+        "field_path": "system_name",
+        "value": "WhatsApp Family Budgeting App",
+        "verdict": "explicitly_supported",
+        "source_quote": "Build a family budgeting app for WhatsApp.",
+        "explanation": "The system name aligns with the task described in the raw specification."
+      },
+      {
+        "field_path": "goal",
+        "value": "To provide families with an easy way to manage and track their budget through WhatsApp.",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "The goal is a logical elaboration of building a family budgeting app which implies management and tracking functionality."
+      },
+      {
+        "field_path": "users[0]",
+        "value": "Family members",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "The specification implies that family members would be the users of a family budgeting app."
+      },
+      {
+        "field_path": "core_capabilities[0]",
+        "value": "Budget tracking and visualization",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "Budget tracking is strongly implied by the requirement to build a family budgeting app."
+      },
+      {
+        "field_path": "core_capabilities[1]",
+        "value": "Expense categorization",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "While categorization is logical for budgeting, it isn't explicitly mentioned or strictly necessary just based on the raw specification."
+      },
+      {
+        "field_path": "core_capabilities[2]",
+        "value": "Multi-user collaboration for families",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "Collaboration could be inferred, but it’s not directly implied by the specification which only mentions a single budgeting app for families."
+      },
+      {
+        "field_path": "core_capabilities[3]",
+        "value": "WhatsApp message-based interface for input and output",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "The specification's mention of WhatsApp implies this need for integration and message-based functionality for input and output."
+      },
+      {
+        "field_path": "main_components[0]",
+        "value": "WhatsApp Integration Module",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "A WhatsApp integration module is necessary to meet the requirement for using WhatsApp."
+      },
+      {
+        "field_path": "main_components[1]",
+        "value": "Budget Management Core",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "This component is implied by the need for budgeting capabilities."
+      },
+      {
+        "field_path": "main_components[2]",
+        "value": "Expense Categorization Engine",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "Useful for budgeting but not explicitly or strictly necessary based on the specification."
+      },
+      {
+        "field_path": "main_components[3]",
+        "value": "User Interface & Messaging Handler",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "Necessitated by the WhatsApp-based user interface requirement."
+      },
+      {
+        "field_path": "assumptions[0]",
+        "value": "WhatsApp API allows basic integration functionalities.",
+        "verdict": "explicitly_supported",
+        "source_quote": "Build a family budgeting app for WhatsApp.",
+        "explanation": "This assumption aligns with the necessity of integrating with WhatsApp."
+      },
+      {
+        "field_path": "open_questions[0]",
+        "value": "What specific budgeting features are most important to target users?",
+        "verdict": "explicitly_supported",
+        "source_quote": "Build a family budgeting app for WhatsApp.",
+        "explanation": "Defining specific features is legitimate as the specification does not include this detail."
+      },
+      {
+        "field_path": "open_questions[1]",
+        "value": "What data privacy measures are necessary for handling budget data through WhatsApp?",
+        "verdict": "explicitly_supported",
+        "source_quote": "Build a family budgeting app for WhatsApp.",
+        "explanation": "Privacy concerns are valid and must be addressed when dealing with sensitive data over WhatsApp."
+      }
+    ],
+    "missing_requirements": [],
+    "distorted_requirements": [],
+    "hallucinated_requirements": [
+      "core_capabilities[1]",
+      "core_capabilities[2]",
+      "main_components[2]"
+    ],
+    "justified_inferences": [
+      "goal",
+      "users[0]",
+      "core_capabilities[0]",
+      "core_capabilities[3]",
+      "main_components[0]",
+      "main_components[1]",
+      "main_components[3]"
+    ],
+    "weak_inferences": [
+      "core_capabilities[1]",
+      "core_capabilities[2]",
+      "main_components[2]"
+    ],
+    "improvement_tip": "Ensure all core capabilities and components are either explicitly grounded or strongly implied by the initial specification.",
+    "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=3, score=0.5"
+  },
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "output": {
+        "system_name": "WhatsApp Family Budgeting App",
+        "goal": "To provide families with a tool integrated into WhatsApp that helps them manage and track their household budgets efficiently.",
+        "users": [
+          "Family members",
+          "Primary budget organizer"
+        ],
+        "core_capabilities": [
+          "Track family income and expenses via WhatsApp interface",
+          "Generate reports summarizing financial activity within the family",
+          "Send and receive budget alerts and notifications",
+          "Allow multiple family members to input data",
+          "Provide a simple interface for categorizing expenses"
+        ],
+        "main_components": [
+          "WhatsApp Bot Interface",
+          "Data Processing Backend",
+          "Database for Financial Records",
+          "Alerts and Notification System",
+          "Simple Report Generator"
+        ],
+        "assumptions": [
+          "Users are familiar with using WhatsApp for communication.",
+          "The system relies on WhatsApp's API for integration.",
+          "The app will support multi-user input for family members.",
+          "Privacy and security of financial data are maintained according to standard practices."
+        ],
+        "open_questions": [
+          "What specific features should be prioritized in the initial version?",
+          "How will the app authenticate and track different family users?",
+          "What will be the supported methods of data input for expenses and income?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.1,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "WhatsApp Family Budgeting App",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The raw spec states 'family budgeting app for WhatsApp' which implies a name like 'WhatsApp Family Budgeting App'."
+          },
+          {
+            "field_path": "goal",
+            "value": "To provide families with a tool integrated into WhatsApp that helps them manage and track their household budgets efficiently.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "WhatsApp integration for family budgeting implies the goal of managing and tracking household budgets."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Family members",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app",
+            "explanation": "The app is for family use, implying family members as users."
+          },
+          {
+            "field_path": "users[1]",
+            "value": "Primary budget organizer",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw spec does not mention or imply a 'Primary budget organizer' as a distinct role."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Track family income and expenses via WhatsApp interface",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Tracking income and expenses is basic for budgeting, implied by WhatsApp family budgeting app."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Generate reports summarizing financial activity within the family",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw spec does not mention anything about generating reports."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Send and receive budget alerts and notifications",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Sending and receiving notifications is not mentioned or implied in the raw spec."
+          },
+          {
+            "field_path": "core_capabilities[3]",
+            "value": "Allow multiple family members to input data",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Family budgeting implies that multiple members can input data."
+          },
+          {
+            "field_path": "core_capabilities[4]",
+            "value": "Provide a simple interface for categorizing expenses",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw spec does not mention categorizing expenses."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "WhatsApp Bot Interface",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "To integrate with WhatsApp, a bot interface is implied."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Data Processing Backend",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw spec does not mention any backend for data processing."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Database for Financial Records",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A budgeting app would need a database for storing financial records."
+          },
+          {
+            "field_path": "main_components[3]",
+            "value": "Alerts and Notification System",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw spec does not mention an alerts and notification system."
+          },
+          {
+            "field_path": "main_components[4]",
+            "value": "Simple Report Generator",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw spec does not mention generating reports."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Users are familiar with using WhatsApp for communication.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Integration into WhatsApp implies users are familiar with WhatsApp."
+          },
+          {
+            "field_path": "assumptions[1]",
+            "value": "The system relies on WhatsApp's API for integration.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Integration with WhatsApp implies using its API."
+          },
+          {
+            "field_path": "assumptions[2]",
+            "value": "The app will support multi-user input for family members.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A family budgeting app implies multiple users can input data."
+          },
+          {
+            "field_path": "assumptions[3]",
+            "value": "Privacy and security of financial data are maintained according to standard practices.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While privacy is often considered, it is not specified or implied by the raw spec."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What specific features should be prioritized in the initial version?",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "The raw spec is brief, leaving room for prioritization decisions."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "How will the app authenticate and track different family users?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Tracking users is implied by needing to manage family budgets."
+          },
+          {
+            "field_path": "open_questions[2]",
+            "value": "What will be the supported methods of data input for expenses and income?",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "The spec is vague, allowing for questions about data input methods."
+          }
+        ],
+        "missing_requirements": [
+          "family budgeting"
+        ],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "users[1]",
+          "core_capabilities[1]",
+          "core_capabilities[2]",
+          "core_capabilities[4]",
+          "main_components[1]",
+          "main_components[3]",
+          "main_components[4]"
+        ],
+        "justified_inferences": [
+          "system_name",
+          "goal",
+          "core_capabilities[0]",
+          "core_capabilities[3]",
+          "main_components[0]",
+          "main_components[2]",
+          "assumptions[0]",
+          "assumptions[1]",
+          "assumptions[2]",
+          "open_questions[1]"
+        ],
+        "weak_inferences": [
+          "assumptions[3]"
+        ],
+        "improvement_tip": "Ensure all core capabilities and components are directly supported or clearly implied by the raw specification. Avoid adding unsupported features or roles.",
+        "failure_reason": "Failed grounding gate: missing=1, distorted=0, hallucinated=7, score=0.1"
+      },
+      "metrics": {
+        "total_fields": 21,
+        "explicit_support_rate": 0.14285714285714285,
+        "strong_inference_rate": 0.47619047619047616,
+        "weak_inference_rate": 0.047619047619047616,
+        "unsupported_rate": 0.3333333333333333,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.14285714285714285,
+        "core_capability_coverage": 0.4,
+        "hallucination_count": 7,
+        "missing_count": 1,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 1,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.5428571428571429,
+        "preservation_score": 0.0,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 2,
+      "output": {
+        "system_name": "WhatsApp Family Budgeting App",
+        "goal": "To provide a family budgeting solution that operates via WhatsApp.",
+        "users": [
+          "Family members using WhatsApp"
+        ],
+        "core_capabilities": [
+          "Facilitate tracking of family expenses and budgets through WhatsApp"
+        ],
+        "main_components": [
+          "WhatsApp Chatbot Interface",
+          "Expense Management Module"
+        ],
+        "assumptions": [
+          "WhatsApp API allows integration for budgeting functionalities",
+          "Family members are comfortable using WhatsApp for budgeting activities"
+        ],
+        "open_questions": [
+          "How will budget data be stored and accessed securely?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.9,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "WhatsApp Family Budgeting App",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The requirement to build a family budgeting app for WhatsApp implies the name."
+          },
+          {
+            "field_path": "goal",
+            "value": "To provide a family budgeting solution that operates via WhatsApp.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "The goal is directly aligned with the raw specification to build a family budgeting app for WhatsApp."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Family members using WhatsApp",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Since the app is for family budgeting on WhatsApp, it is strongly implied the users are family members using WhatsApp."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Facilitate tracking of family expenses and budgets through WhatsApp",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Tracking family expenses and budgets is implied as a core capability of a family budgeting app."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "WhatsApp Chatbot Interface",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A WhatsApp interaction suggests a chatbot or similar interface is needed for integration."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Expense Management Module",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Expense management is implied by the purpose of a budgeting app."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "WhatsApp API allows integration for budgeting functionalities",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "The integration with WhatsApp is necessary but the availability of necessary API functionalities is assumed."
+          },
+          {
+            "field_path": "assumptions[1]",
+            "value": "Family members are comfortable using WhatsApp for budgeting activities",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "The assumption about user familiarity with WhatsApp for budgeting is implied but not explicit."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "How will budget data be stored and accessed securely?",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "Data storage and security is a valid question for any app with sensitive financial information."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "assumptions[0]",
+          "assumptions[1]"
+        ],
+        "justified_inferences": [
+          "system_name",
+          "users[0]",
+          "core_capabilities[0]",
+          "main_components[0]",
+          "main_components[1]"
+        ],
+        "weak_inferences": [],
+        "improvement_tip": "Review any explicit user comfort and API capabilities requirements from stakeholders to guide assumptions more precisely.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=2, score=0.9"
+      },
+      "metrics": {
+        "total_fields": 9,
+        "explicit_support_rate": 0.2222222222222222,
+        "strong_inference_rate": 0.5555555555555556,
+        "weak_inference_rate": 0.2222222222222222,
+        "unsupported_rate": 0.0,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.2222222222222222,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 2,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 2,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.7555555555555555,
+        "preservation_score": 0.6,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 3,
+      "output": {
+        "system_name": "WhatsApp Family Budgeting App",
+        "goal": "To provide families with an easy way to manage and track their budget through WhatsApp.",
+        "users": [
+          "Family members"
+        ],
+        "core_capabilities": [
+          "Budget tracking and visualization",
+          "Expense categorization",
+          "Multi-user collaboration for families",
+          "WhatsApp message-based interface for input and output"
+        ],
+        "main_components": [
+          "WhatsApp Integration Module",
+          "Budget Management Core",
+          "Expense Categorization Engine",
+          "User Interface & Messaging Handler"
+        ],
+        "assumptions": [
+          "WhatsApp API allows basic integration functionalities."
+        ],
+        "open_questions": [
+          "What specific budgeting features are most important to target users?",
+          "What data privacy measures are necessary for handling budget data through WhatsApp?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.5,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "WhatsApp Family Budgeting App",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "The system name aligns with the task described in the raw specification."
+          },
+          {
+            "field_path": "goal",
+            "value": "To provide families with an easy way to manage and track their budget through WhatsApp.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The goal is a logical elaboration of building a family budgeting app which implies management and tracking functionality."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Family members",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The specification implies that family members would be the users of a family budgeting app."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Budget tracking and visualization",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Budget tracking is strongly implied by the requirement to build a family budgeting app."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Expense categorization",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While categorization is logical for budgeting, it isn't explicitly mentioned or strictly necessary just based on the raw specification."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Multi-user collaboration for families",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Collaboration could be inferred, but it’s not directly implied by the specification which only mentions a single budgeting app for families."
+          },
+          {
+            "field_path": "core_capabilities[3]",
+            "value": "WhatsApp message-based interface for input and output",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The specification's mention of WhatsApp implies this need for integration and message-based functionality for input and output."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "WhatsApp Integration Module",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A WhatsApp integration module is necessary to meet the requirement for using WhatsApp."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Budget Management Core",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "This component is implied by the need for budgeting capabilities."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Expense Categorization Engine",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Useful for budgeting but not explicitly or strictly necessary based on the specification."
+          },
+          {
+            "field_path": "main_components[3]",
+            "value": "User Interface & Messaging Handler",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Necessitated by the WhatsApp-based user interface requirement."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "WhatsApp API allows basic integration functionalities.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "This assumption aligns with the necessity of integrating with WhatsApp."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What specific budgeting features are most important to target users?",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "Defining specific features is legitimate as the specification does not include this detail."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "What data privacy measures are necessary for handling budget data through WhatsApp?",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a family budgeting app for WhatsApp.",
+            "explanation": "Privacy concerns are valid and must be addressed when dealing with sensitive data over WhatsApp."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "core_capabilities[1]",
+          "core_capabilities[2]",
+          "main_components[2]"
+        ],
+        "justified_inferences": [
+          "goal",
+          "users[0]",
+          "core_capabilities[0]",
+          "core_capabilities[3]",
+          "main_components[0]",
+          "main_components[1]",
+          "main_components[3]"
+        ],
+        "weak_inferences": [
+          "core_capabilities[1]",
+          "core_capabilities[2]",
+          "main_components[2]"
+        ],
+        "improvement_tip": "Ensure all core capabilities and components are either explicitly grounded or strongly implied by the initial specification.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=3, score=0.5"
+      },
+      "metrics": {
+        "total_fields": 14,
+        "explicit_support_rate": 0.2857142857142857,
+        "strong_inference_rate": 0.5,
+        "weak_inference_rate": 0.21428571428571427,
+        "unsupported_rate": 0.0,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.2857142857142857,
+        "core_capability_coverage": 0.5,
+        "hallucination_count": 3,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 3,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.7714285714285715,
+        "preservation_score": 0.3999999999999999,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    }
+  ],
+  "run_convergence": {
+    "attempts": 3,
+    "converged": false,
+    "status": "FAIL",
+    "initial_risk_score": 1.0,
+    "final_risk_score": 1.0,
+    "risk_reduction": 0.0,
+    "initial_blocking_failures": 1,
+    "final_blocking_failures": 1,
+    "blocking_failures_removed": 0,
+    "initial_hallucination_count": 7,
+    "final_hallucination_count": 3,
+    "hallucinations_removed": 4,
+    "final_preservation_score": 0.3999999999999999,
+    "final_core_capability_coverage": 0.5,
+    "convergence_score": 0.265
+  }
+}

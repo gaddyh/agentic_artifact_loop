@@ -1,0 +1,96 @@
+{
+  "score": 0.5,
+  "passed": false,
+  "field_grounding": [
+    {
+      "field_path": "system_name",
+      "value": "Adaptive Classroom AI Tutor",
+      "verdict": "strongly_implied",
+      "source_quote": "Create a classroom AI tutor",
+      "explanation": "The raw spec mentions 'classroom AI tutor', which strongly implies this name."
+    },
+    {
+      "field_path": "goal",
+      "value": "To create an AI tutor for the classroom that can adapt the difficulty of questions based on the student's level of frustration.",
+      "verdict": "explicitly_supported",
+      "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+      "explanation": "The goal is explicitly stated in the raw specification."
+    },
+    {
+      "field_path": "users[0]",
+      "value": "Students",
+      "verdict": "strongly_implied",
+      "source_quote": null,
+      "explanation": "The role of students is strongly implied as they are the ones receiving questions of varied difficulty."
+    },
+    {
+      "field_path": "core_capabilities[0]",
+      "value": "Detect student frustration levels.",
+      "verdict": "strongly_implied",
+      "source_quote": "adapts question difficulty based on student frustration",
+      "explanation": "For the system to adapt question difficulty, it must be able to detect when students are frustrated."
+    },
+    {
+      "field_path": "core_capabilities[1]",
+      "value": "Adjust the difficulty of questions based on detected frustration.",
+      "verdict": "explicitly_supported",
+      "source_quote": "adapts question difficulty based on student frustration",
+      "explanation": "This is directly supported by the specification."
+    },
+    {
+      "field_path": "main_components[0]",
+      "value": "Frustration Detection Module: Identifies student frustration through inputs such as facial expressions, voice tone, or interaction patterns.",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "While detecting frustration is necessary, the specific methods of using facial expressions, voice tone, or interaction patterns are not mentioned or implied in the raw spec."
+    },
+    {
+      "field_path": "main_components[1]",
+      "value": "Difficulty Adjustment Engine: Changes the difficulty of questions in real-time based on the student's frustration level.",
+      "verdict": "strongly_implied",
+      "source_quote": "adapts question difficulty based on student frustration",
+      "explanation": "If the system adapts question difficulty, a component for adjusting difficulty is strongly implied."
+    },
+    {
+      "field_path": "assumptions[0]",
+      "value": "Students can interact with the AI tutor in real-time.",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "Real-time interaction is plausible but not strongly required by the raw specification."
+    },
+    {
+      "field_path": "open_questions[0]",
+      "value": "What specific indicators will be used to detect student frustration?",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "The raw spec does not detail which indicators to use, making this a reasonable open question."
+    },
+    {
+      "field_path": "open_questions[1]",
+      "value": "How will the system evaluate the effectiveness of its question difficulty adjustments on learning outcomes?",
+      "verdict": "weakly_implied",
+      "source_quote": null,
+      "explanation": "The raw spec doesn't mention evaluation of learning outcomes but it's a plausible consideration."
+    }
+  ],
+  "missing_requirements": [],
+  "distorted_requirements": [],
+  "hallucinated_requirements": [
+    "main_components[0]",
+    "assumptions[0]"
+  ],
+  "justified_inferences": [
+    "main_components[1]",
+    "users[0]",
+    "core_capabilities[0]",
+    "system_name"
+  ],
+  "weak_inferences": [
+    "main_components[0]",
+    "assumptions[0]",
+    "open_questions[0]",
+    "open_questions[1]"
+  ],
+  "improvement_tip": "Ensure that all implementation details are either clearly grounded in the raw specification or left open for definition in subsequent phases. Avoid assuming real-time interaction or specific methods for frustration detection unless explicitly required or implied.",
+  "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=2, score=0.5"
+}

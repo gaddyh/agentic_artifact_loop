@@ -1,0 +1,20 @@
+{
+  "system_name": "Publicly Searchable Messaging System",
+  "goal": "To provide a private messaging system where all messages are publicly searchable.",
+  "users": [
+    "Message Senders",
+    "Message Searchers"
+  ],
+  "core_capabilities": [
+    "Send private messages",
+    "Search all messages publicly"
+  ],
+  "main_components": [
+    "Messaging Module",
+    "Search Engine"
+  ],
+  "assumptions": [
+    "All messages sent are intended to be publicly searchable."
+  ],
+  "open_questions": []
+}

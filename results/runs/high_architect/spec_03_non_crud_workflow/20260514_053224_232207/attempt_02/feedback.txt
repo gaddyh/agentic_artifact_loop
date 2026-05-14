@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['main_components[0]', 'assumptions[0]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'main_components[0]', 'value': 'Frustration Detection Module: Identifies student frustration through inputs such as facial expressions, voice tone, or interaction patterns.', 'verdict': 'weakly_implied', 'explanation': 'While detecting frustration is necessary, the specific methods of using facial expressions, voice tone, or interaction patterns are not mentioned or implied in the raw spec.'}, {'field': 'assumptions[0]', 'value': 'Students can interact with the AI tutor in real-time.', 'verdict': 'weakly_implied', 'explanation': 'Real-time interaction is plausible but not strongly required by the raw specification.'}, {'field': 'open_questions[0]', 'value': 'What specific indicators will be used to detect student frustration?', 'verdict': 'weakly_implied', 'explanation': 'The raw spec does not detail which indicators to use, making this a reasonable open question.'}, {'field': 'open_questions[1]', 'value': 'How will the system evaluate the effectiveness of its question difficulty adjustments on learning outcomes?', 'verdict': 'weakly_implied', 'explanation': "The raw spec doesn't mention evaluation of learning outcomes but it's a plausible consideration."}]
+
+            Improvement tip:
+            Ensure that all implementation details are either clearly grounded in the raw specification or left open for definition in subsequent phases. Avoid assuming real-time interaction or specific methods for frustration detection unless explicitly required or implied.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

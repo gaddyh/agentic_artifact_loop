@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            ['Ensure client anonymity in booking/cancelling']
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['Allow clients to book/cancel appointments anonymously', 'Therapist Calendar Interface', 'Client Booking Portal', 'Therapists are responsible for managing their availability in the system.']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'core_capabilities[2]', 'value': 'Provide a calendar view for therapists to manage appointments', 'verdict': 'weakly_implied', 'explanation': 'While useful, a calendar view is not explicitly required or strongly implied by the specification.'}, {'field': 'core_capabilities[3]', 'value': 'Allow clients to book/cancel appointments anonymously', 'verdict': 'unsupported', 'explanation': 'The specification does not mention booking or cancelling, only notification anonymity.'}, {'field': 'main_components[3]', 'value': 'Therapist Calendar Interface', 'verdict': 'unsupported', 'explanation': 'This component is not specified or implied by the specification.'}, {'field': 'main_components[4]', 'value': 'Client Booking Portal', 'verdict': 'unsupported', 'explanation': 'The specification does not mention client booking functionality.'}, {'field': 'assumptions[0]', 'value': 'All therapists are registered users of the system.', 'verdict': 'weakly_implied', 'explanation': 'The specification does not state anything about user registration.'}, {'field': 'assumptions[2]', 'value': 'Therapists are responsible for managing their availability in the system.', 'verdict': 'unsupported', 'explanation': 'The specification does not discuss how therapist availability is managed.'}, {'field': 'open_questions[1]', 'value': 'How will the system authenticate clients while maintaining anonymity?', 'verdict': 'weakly_implied', 'explanation': 'Authentication is relevant to user identification, but not directly mentioned.'}, {'field': 'open_questions[2]', 'value': 'Are there any specific regulations that need to be adhered to in terms of client data security?', 'verdict': 'weakly_implied', 'explanation': 'Regulations might be contextually relevant but are not specified.'}]
+
+            Improvement tip:
+            Focus the HLD on core requirements and avoid introducing ungrounded components or capabilities. Emphasize deriving strongly implied components from the specification requirements.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

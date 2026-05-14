@@ -1,0 +1,691 @@
+{
+  "input": {
+    "text": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings."
+  },
+  "final_output": {
+    "system_name": "Music Lessons Marketplace",
+    "goal": "Connect freelance music teachers with students for recurring lessons and allow for ratings of each interaction.",
+    "users": [
+      "Freelance Music Teachers",
+      "Students"
+    ],
+    "core_capabilities": [
+      "Connecting freelance music teachers with students",
+      "Facilitating recurring lesson scheduling",
+      "Allowing users to rate each other"
+    ],
+    "main_components": [
+      "User Registration and Profile Management",
+      "Recurring Lesson Scheduling System",
+      "Rating System"
+    ],
+    "assumptions": [
+      "The service involves connecting teachers and students for music lessons."
+    ],
+    "open_questions": []
+  },
+  "final_evaluation": {
+    "score": 0.6,
+    "passed": false,
+    "field_grounding": [
+      {
+        "field_path": "system_name",
+        "value": "Music Lessons Marketplace",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "The raw specification describes a system to create a marketplace connecting freelance music teachers and students. Naming it 'Music Lessons Marketplace' is strongly implied as it encapsulates the concept."
+      },
+      {
+        "field_path": "goal",
+        "value": "Connect freelance music teachers with students for recurring lessons and allow for ratings of each interaction.",
+        "verdict": "explicitly_supported",
+        "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings.",
+        "explanation": "The goal directly mirrors the raw specification's description."
+      },
+      {
+        "field_path": "users.0",
+        "value": "Freelance Music Teachers",
+        "verdict": "explicitly_supported",
+        "source_quote": "Create a marketplace connecting freelance music teachers and students",
+        "explanation": "Freelance Music Teachers are explicitly mentioned in the raw specification."
+      },
+      {
+        "field_path": "users.1",
+        "value": "Students",
+        "verdict": "explicitly_supported",
+        "source_quote": "Create a marketplace connecting freelance music teachers and students",
+        "explanation": "Students are explicitly mentioned in the raw specification."
+      },
+      {
+        "field_path": "core_capabilities.0",
+        "value": "Connecting freelance music teachers with students",
+        "verdict": "explicitly_supported",
+        "source_quote": "Create a marketplace connecting freelance music teachers and students",
+        "explanation": "This capability is explicitly supported by the raw specification."
+      },
+      {
+        "field_path": "core_capabilities.1",
+        "value": "Facilitating recurring lesson scheduling",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "Recurring lessons suggest scheduling capabilities. Thus, this is strongly implied by the raw specification."
+      },
+      {
+        "field_path": "core_capabilities.2",
+        "value": "Allowing users to rate each other",
+        "verdict": "explicitly_supported",
+        "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings.",
+        "explanation": "This capability is explicitly mentioned in the raw specification as 'ratings'."
+      },
+      {
+        "field_path": "main_components.0",
+        "value": "User Registration and Profile Management",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "User Registration and Profile Management is not mentioned or implied by the raw specification."
+      },
+      {
+        "field_path": "main_components.1",
+        "value": "Recurring Lesson Scheduling System",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "A system for recurring lesson scheduling is strongly implied as it is an essential part of facilitating recurring lessons."
+      },
+      {
+        "field_path": "main_components.2",
+        "value": "Rating System",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "A Rating System is strongly implied as it is necessary to support the 'ratings' requirement."
+      },
+      {
+        "field_path": "assumptions.0",
+        "value": "The service involves connecting teachers and students for music lessons.",
+        "verdict": "explicitly_supported",
+        "source_quote": "Create a marketplace connecting freelance music teachers and students",
+        "explanation": "This assumption restates the core idea of the raw specification."
+      }
+    ],
+    "missing_requirements": [],
+    "distorted_requirements": [],
+    "hallucinated_requirements": [
+      "main_components.0"
+    ],
+    "justified_inferences": [
+      "core_capabilities.1",
+      "main_components.1",
+      "main_components.2"
+    ],
+    "weak_inferences": [],
+    "improvement_tip": "Ensure all main components are grounded in the raw specification or supported by strong implications from the requirements.",
+    "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=1, score=0.6"
+  },
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "output": {
+        "system_name": "MusicHaven Marketplace",
+        "goal": "To provide a platform that connects freelance music teachers with students for recurring music lessons and allows for ratings of those interactions.",
+        "users": [
+          "Freelance Music Teachers",
+          "Students"
+        ],
+        "core_capabilities": [
+          "Allow freelance music teachers to create profiles and list their services.",
+          "Enable students to search for and book music teachers based on specific criteria.",
+          "Support recurring lesson scheduling and management between teachers and students.",
+          "Provide a rating system for students to rate teachers after each lesson."
+        ],
+        "main_components": [
+          "User Management System",
+          "Teacher Profile and Service Listing",
+          "Search and Match Engine",
+          "Booking and Scheduling Module",
+          "Rating and Review System",
+          "Notification and Reminder System",
+          "Payment Gateway Integration"
+        ],
+        "assumptions": [
+          "Users have internet access to utilize the platform.",
+          "Teachers are responsible for maintaining their own availability schedules.",
+          "There exists a secure payment method integrated into the platform to handle transactions."
+        ],
+        "open_questions": [
+          "Will there be an upfront subscription fee for teachers to use the platform?",
+          "Is there any specific geolocation functionality needed for service area restrictions?",
+          "What payment methods will be supported in the payment gateway?",
+          "How detailed do teacher profiles need to be?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.45,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "MusicHaven Marketplace",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention a specific system name."
+          },
+          {
+            "field_path": "goal",
+            "value": "To provide a platform that connects freelance music teachers with students for recurring music lessons and allows for ratings of those interactions.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings.",
+            "explanation": "The goal aligns directly with the raw specification."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Freelance Music Teachers",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students...",
+            "explanation": "Freelance music teachers are explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "users[1]",
+            "value": "Students",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students...",
+            "explanation": "Students are explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Allow freelance music teachers to create profiles and list their services.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Profiles and service listings are necessary for a marketplace where teachers connect with students."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Enable students to search for and book music teachers based on specific criteria.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Searching and booking teachers are necessary functionalities for connecting students to freelance music teachers."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Support recurring lesson scheduling and management between teachers and students.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons...",
+            "explanation": "Recurring lesson management is explicitly mentioned."
+          },
+          {
+            "field_path": "core_capabilities[3]",
+            "value": "Provide a rating system for students to rate teachers after each lesson.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with...ratings.",
+            "explanation": "A ratings system is mentioned directly in the raw specification."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "User Management System",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A user management system is necessary for managing user accounts in a marketplace platform."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Teacher Profile and Service Listing",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "This component is necessary for teachers to present their services to students, as implied by the marketplace description."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Search and Match Engine",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The ability to search and match is necessary for students to find suitable teachers, as part of the core function of the specified marketplace."
+          },
+          {
+            "field_path": "main_components[3]",
+            "value": "Booking and Scheduling Module",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "This capability enables students to book lessons, a fundamental part of the marketplace operation."
+          },
+          {
+            "field_path": "main_components[4]",
+            "value": "Rating and Review System",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with...ratings.",
+            "explanation": "The ratings system is directly supported by the raw specification."
+          },
+          {
+            "field_path": "main_components[5]",
+            "value": "Notification and Reminder System",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While potentially useful, notifications and reminders are not explicitly or strongly implied by the requirements."
+          },
+          {
+            "field_path": "main_components[6]",
+            "value": "Payment Gateway Integration",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Payment integration is not mentioned nor implied in the raw specification."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Users have internet access to utilize the platform.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students...",
+            "explanation": "An online marketplace implies internet access."
+          },
+          {
+            "field_path": "assumptions[1]",
+            "value": "Teachers are responsible for maintaining their own availability schedules.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "This is not mentioned or implied in the raw specification."
+          },
+          {
+            "field_path": "assumptions[2]",
+            "value": "There exists a secure payment method integrated into the platform to handle transactions.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Integration of a payment method is not mentioned or implied in the raw specification."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "Will there be an upfront subscription fee for teachers to use the platform?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention fees or subscriptions for teachers."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "Is there any specific geolocation functionality needed for service area restrictions?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Geolocation functionality is not mentioned or implied by the raw specification."
+          },
+          {
+            "field_path": "open_questions[2]",
+            "value": "What payment methods will be supported in the payment gateway?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention payment methods or gateways."
+          },
+          {
+            "field_path": "open_questions[3]",
+            "value": "How detailed do teacher profiles need to be?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not specify the level of detail for teacher profiles."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "system_name",
+          "main_components[5]: Notification and Reminder System",
+          "main_components[6]: Payment Gateway Integration",
+          "assumptions[1]: Teachers are responsible for maintaining their own availability schedules.",
+          "assumptions[2]: There exists a secure payment method integrated into the platform to handle transactions.",
+          "open_questions[0]: Will there be an upfront subscription fee for teachers to use the platform?",
+          "open_questions[1]: Is there any specific geolocation functionality needed for service area restrictions?",
+          "open_questions[2]: What payment methods will be supported in the payment gateway?",
+          "open_questions[3]: How detailed do teacher profiles need to be?"
+        ],
+        "justified_inferences": [],
+        "weak_inferences": [
+          "main_components[5]: Notification and Reminder System"
+        ],
+        "improvement_tip": "Remove unsupported and weak inferences from the HLD to ensure alignment with the raw specification. Focus only on the requirements explicitly mentioned or strongly implied, such as connecting teachers and students for recurring music lessons with a rating system.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=9, score=0.45"
+      },
+      "metrics": {
+        "total_fields": 22,
+        "explicit_support_rate": 0.3181818181818182,
+        "strong_inference_rate": 0.2727272727272727,
+        "weak_inference_rate": 0.045454545454545456,
+        "unsupported_rate": 0.36363636363636365,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.3181818181818182,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 9,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 1,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.5545454545454546,
+        "preservation_score": 0.0,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 2,
+      "output": {
+        "system_name": "Freelance Music Lessons Marketplace",
+        "goal": "To connect freelance music teachers and students for recurring lessons with a rating system.",
+        "users": [
+          "Freelance Music Teachers",
+          "Students"
+        ],
+        "core_capabilities": [
+          "Connect freelance music teachers with students",
+          "Schedule recurring music lessons",
+          "Rate lessons and provide feedback after each session"
+        ],
+        "main_components": [
+          "User Profile Management",
+          "Lesson Scheduling System",
+          "Rating and Feedback System",
+          "Search and Discovery Mechanism"
+        ],
+        "assumptions": [
+          "Teachers and students sign up voluntarily for the platform."
+        ],
+        "open_questions": [
+          "How will recurring lessons be managed and tracked?",
+          "What kinds of ratings and feedback can users provide?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.9,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Freelance Music Lessons Marketplace",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The raw specification implies a marketplace by stating 'a marketplace connecting freelance music teachers and students'."
+          },
+          {
+            "field_path": "goal",
+            "value": "To connect freelance music teachers and students for recurring lessons with a rating system.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings.",
+            "explanation": "The goal directly reflects the raw specification."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Freelance Music Teachers",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students",
+            "explanation": "Freelance music teachers are explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "users[1]",
+            "value": "Students",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students",
+            "explanation": "Students are explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Connect freelance music teachers with students",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students",
+            "explanation": "Connecting teachers and students is explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Schedule recurring music lessons",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons",
+            "explanation": "Scheduling recurring lessons is explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Rate lessons and provide feedback after each session",
+            "verdict": "strongly_implied",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings",
+            "explanation": "The mention of ratings implies the need for a system to rate and provide feedback on lessons."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "User Profile Management",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "To connect teachers and students, user profiles are implied for each party."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Lesson Scheduling System",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A scheduling system is implied by the need to handle 'recurring lessons'."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Rating and Feedback System",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A ratings system is needed for the 'ratings' aspect of the specification."
+          },
+          {
+            "field_path": "main_components[3]",
+            "value": "Search and Discovery Mechanism",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention or imply a search and discovery mechanism."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Teachers and students sign up voluntarily for the platform.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "The assumption of voluntary signup is not directly stated or strongly implied."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "How will recurring lessons be managed and tracked?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Managing and tracking recurring lessons is necessary for the specification but not detailed."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "What kinds of ratings and feedback can users provide?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The specification requires ratings, making the type of ratings an important open question."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "main_components[3]"
+        ],
+        "justified_inferences": [
+          "system_name",
+          "core_capabilities[2]",
+          "main_components[0]",
+          "main_components[1]",
+          "main_components[2]",
+          "open_questions[0]",
+          "open_questions[1]"
+        ],
+        "weak_inferences": [
+          "assumptions[0]"
+        ],
+        "improvement_tip": "Remove unsupported components like 'Search and Discovery Mechanism' or justify them with strong implications from the raw spec. Ensure all assumptions are at least weakly implied or justified by the spec.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=1, score=0.9"
+      },
+      "metrics": {
+        "total_fields": 14,
+        "explicit_support_rate": 0.35714285714285715,
+        "strong_inference_rate": 0.5,
+        "weak_inference_rate": 0.07142857142857142,
+        "unsupported_rate": 0.07142857142857142,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.42857142857142855,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 1,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 1,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.7857142857142858,
+        "preservation_score": 0.8,
+        "risk_score": 0.9,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 3,
+      "output": {
+        "system_name": "Music Lessons Marketplace",
+        "goal": "Connect freelance music teachers with students for recurring lessons and allow for ratings of each interaction.",
+        "users": [
+          "Freelance Music Teachers",
+          "Students"
+        ],
+        "core_capabilities": [
+          "Connecting freelance music teachers with students",
+          "Facilitating recurring lesson scheduling",
+          "Allowing users to rate each other"
+        ],
+        "main_components": [
+          "User Registration and Profile Management",
+          "Recurring Lesson Scheduling System",
+          "Rating System"
+        ],
+        "assumptions": [
+          "The service involves connecting teachers and students for music lessons."
+        ],
+        "open_questions": []
+      },
+      "evaluation": {
+        "score": 0.6,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Music Lessons Marketplace",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The raw specification describes a system to create a marketplace connecting freelance music teachers and students. Naming it 'Music Lessons Marketplace' is strongly implied as it encapsulates the concept."
+          },
+          {
+            "field_path": "goal",
+            "value": "Connect freelance music teachers with students for recurring lessons and allow for ratings of each interaction.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings.",
+            "explanation": "The goal directly mirrors the raw specification's description."
+          },
+          {
+            "field_path": "users.0",
+            "value": "Freelance Music Teachers",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students",
+            "explanation": "Freelance Music Teachers are explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "users.1",
+            "value": "Students",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students",
+            "explanation": "Students are explicitly mentioned in the raw specification."
+          },
+          {
+            "field_path": "core_capabilities.0",
+            "value": "Connecting freelance music teachers with students",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students",
+            "explanation": "This capability is explicitly supported by the raw specification."
+          },
+          {
+            "field_path": "core_capabilities.1",
+            "value": "Facilitating recurring lesson scheduling",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Recurring lessons suggest scheduling capabilities. Thus, this is strongly implied by the raw specification."
+          },
+          {
+            "field_path": "core_capabilities.2",
+            "value": "Allowing users to rate each other",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students with recurring lessons and ratings.",
+            "explanation": "This capability is explicitly mentioned in the raw specification as 'ratings'."
+          },
+          {
+            "field_path": "main_components.0",
+            "value": "User Registration and Profile Management",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "User Registration and Profile Management is not mentioned or implied by the raw specification."
+          },
+          {
+            "field_path": "main_components.1",
+            "value": "Recurring Lesson Scheduling System",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A system for recurring lesson scheduling is strongly implied as it is an essential part of facilitating recurring lessons."
+          },
+          {
+            "field_path": "main_components.2",
+            "value": "Rating System",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A Rating System is strongly implied as it is necessary to support the 'ratings' requirement."
+          },
+          {
+            "field_path": "assumptions.0",
+            "value": "The service involves connecting teachers and students for music lessons.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a marketplace connecting freelance music teachers and students",
+            "explanation": "This assumption restates the core idea of the raw specification."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "main_components.0"
+        ],
+        "justified_inferences": [
+          "core_capabilities.1",
+          "main_components.1",
+          "main_components.2"
+        ],
+        "weak_inferences": [],
+        "improvement_tip": "Ensure all main components are grounded in the raw specification or supported by strong implications from the requirements.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=1, score=0.6"
+      },
+      "metrics": {
+        "total_fields": 11,
+        "explicit_support_rate": 0.5454545454545454,
+        "strong_inference_rate": 0.36363636363636365,
+        "weak_inference_rate": 0.0,
+        "unsupported_rate": 0.09090909090909091,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.5454545454545454,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 1,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.8363636363636363,
+        "preservation_score": 0.8,
+        "risk_score": 0.8,
+        "blocking_failure": true
+      }
+    }
+  ],
+  "run_convergence": {
+    "attempts": 3,
+    "converged": false,
+    "status": "FAIL",
+    "initial_risk_score": 1.0,
+    "final_risk_score": 0.8,
+    "risk_reduction": 0.19999999999999996,
+    "initial_blocking_failures": 1,
+    "final_blocking_failures": 1,
+    "blocking_failures_removed": 0,
+    "initial_hallucination_count": 9,
+    "final_hallucination_count": 1,
+    "hallucinations_removed": 8,
+    "final_preservation_score": 0.8,
+    "final_core_capability_coverage": 1.0,
+    "convergence_score": 0.59
+  }
+}

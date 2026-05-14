@@ -1,0 +1,21 @@
+{
+  "system_name": "AI Second Brain",
+  "goal": "Enhance the user's cognitive functions by acting as a secondary brain to manage personal knowledge and tasks.",
+  "users": [
+    "Individual User"
+  ],
+  "core_capabilities": [
+    "Store and organize user's personal information and knowledge.",
+    "Enhance cognitive functions such as understanding and problem-solving based on user's inputs."
+  ],
+  "main_components": [
+    "Knowledge Storage System",
+    "Cognitive Enhancement Engine"
+  ],
+  "assumptions": [
+    "The user wants to improve cognitive functions beyond mere organization."
+  ],
+  "open_questions": [
+    "What specific cognitive functions does the user want enhanced beyond organization?"
+  ]
+}

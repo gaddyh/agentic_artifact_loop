@@ -1,0 +1,36 @@
+{
+  "system_name": "Adaptive Classroom AI Tutor",
+  "goal": "To provide a personalized tutoring experience by adjusting the difficulty of questions based on detected student frustration levels, enhancing the learning process in real-time.",
+  "users": [
+    "Students",
+    "Teachers"
+  ],
+  "core_capabilities": [
+    "Detect student frustration in real-time.",
+    "Adjust question difficulty based on detected frustration levels.",
+    "Provide a seamless tutoring experience with a variety of question types and subjects.",
+    "Track student performance and progress.",
+    "Offer teachers insights into individual and class performance."
+  ],
+  "main_components": [
+    "Frustration Detection Module: Analyzes student interactions and possibly camera feeds/audio to detect frustration levels.",
+    "Question Difficulty Adjustment Module: Modifies the difficulty level of questions based on inputs from the frustration detection module.",
+    "Learning Content Database: A repository of questions and learning materials categorized by subject and difficulty.",
+    "User Interface: Provides an interactive experience for students to receive questions and submit answers.",
+    "Analytics and Reporting Dashboard: Offers teachers insight into student performance and class trends.",
+    "Integration Layer: Facilitates communication between modules and the storage of student data."
+  ],
+  "assumptions": [
+    "Student frustration can be detected accurately through available data sensors or interaction analytics.",
+    "There are reliable metrics to adjust question difficulty appropriately.",
+    "Teachers will have access to an interface to review student progress and system recommendations.",
+    "Students have access to devices that support the user interface for interaction with the AI tutor."
+  ],
+  "open_questions": [
+    "How will the system initially calibrate each student's frustration levels accurately?",
+    "What privacy measures will be in place considering the potential use of cameras or microphones?",
+    "How quickly should the system react to changes in detected frustration levels to adjust difficulty without disrupting the learning process?",
+    "What fallback mechanisms will be implemented if frustration detection fails or data is insufficient?",
+    "Is there scope for integrating this system with existing learning management systems?"
+  ]
+}

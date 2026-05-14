@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 1.0
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['users[1]', 'core_capabilities[2]', 'core_capabilities[3]', 'core_capabilities[4]', 'main_components[2]', 'main_components[4]', 'main_components[5]', 'assumptions[2]', 'open_questions[4]']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'users[1]', 'value': 'Teachers', 'verdict': 'unsupported', 'explanation': 'The specification does not mention teachers as users or beneficiaries of the system.'}, {'field': 'core_capabilities[2]', 'value': 'Provide a seamless tutoring experience with a variety of question types and subjects.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention the need for a variety of question types and subjects or seamless experience.'}, {'field': 'core_capabilities[3]', 'value': 'Track student performance and progress.', 'verdict': 'unsupported', 'explanation': 'Tracking performance and progress is not mentioned in the specification.'}, {'field': 'core_capabilities[4]', 'value': 'Offer teachers insights into individual and class performance.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention providing insights or analytics to teachers.'}, {'field': 'main_components[2]', 'value': 'Learning Content Database: A repository of questions and learning materials categorized by subject and difficulty.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention a learning content database.'}, {'field': 'main_components[4]', 'value': 'Analytics and Reporting Dashboard: Offers teachers insight into student performance and class trends.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention providing analytics or a dashboard for teachers.'}, {'field': 'main_components[5]', 'value': 'Integration Layer: Facilitates communication between modules and the storage of student data.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention any integration or data storage details.'}, {'field': 'assumptions[2]', 'value': 'Teachers will have access to an interface to review student progress and system recommendations.', 'verdict': 'unsupported', 'explanation': 'The specification does not mention teacher interfaces or reviewing capabilities.'}, {'field': 'assumptions[3]', 'value': 'Students have access to devices that support the user interface for interaction with the AI tutor.', 'verdict': 'weakly_implied', 'explanation': 'Implied assumption as remote interaction requires device access but not explicitly mentioned.'}, {'field': 'open_questions[0]', 'value': "How will the system initially calibrate each student's frustration levels accurately?", 'verdict': 'weakly_implied', 'explanation': 'Calibration is a logical question arising from detecting frustration but not mentioned.'}, {'field': 'open_questions[2]', 'value': 'How quickly should the system react to changes in detected frustration levels to adjust difficulty without disrupting the learning process?', 'verdict': 'weakly_implied', 'explanation': 'Timing of adjustments affects learning experience; reasonable but not explicit or strongly implied.'}, {'field': 'open_questions[3]', 'value': 'What fallback mechanisms will be implemented if frustration detection fails or data is insufficient?', 'verdict': 'weakly_implied', 'explanation': 'Contingency planning is logical but not mentioned or strongly implied.'}, {'field': 'open_questions[4]', 'value': 'Is there scope for integrating this system with existing learning management systems?', 'verdict': 'unsupported', 'explanation': 'The specification does not mention integration with other systems.'}]
+
+            Improvement tip:
+            Focus on aligning all components and users with the explicit requirements of the specification. Remove unsupported elements like teacher interfaces, analytics, and integration aspects unless they are derived from the specification.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

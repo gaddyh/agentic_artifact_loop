@@ -1,0 +1,28 @@
+
+            The previous attempt did not pass the deterministic quality gate.
+
+            Blocking failure: True
+            Risk score: 0.8
+            Risk threshold: 0.35
+
+            Missing requirements:
+            []
+
+            Distorted requirements:
+            []
+
+            Hallucinated requirements:
+            ['main_components.0']
+
+            Unsupported / contradicted / weak fields:
+            [{'field': 'main_components.0', 'value': 'User Registration and Profile Management', 'verdict': 'unsupported', 'explanation': 'User Registration and Profile Management is not mentioned or implied by the raw specification.'}]
+
+            Improvement tip:
+            Ensure all main components are grounded in the raw specification or supported by strong implications from the requirements.
+
+            Revise the output to:
+            - preserve all explicit requirements
+            - remove unsupported confirmed claims
+            - keep assumptions minimal
+            - keep open questions only when useful and clearly grounded
+            

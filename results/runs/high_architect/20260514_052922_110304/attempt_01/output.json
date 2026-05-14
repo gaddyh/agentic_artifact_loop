@@ -1,0 +1,32 @@
+{
+  "system_name": "WhatsApp-based Assistant for Solo Service Providers",
+  "goal": "To provide a streamlined appointment management solution for solo service providers using WhatsApp as the primary interface.",
+  "users": [
+    "Solo Service Providers",
+    "Clients of Service Providers"
+  ],
+  "core_capabilities": [
+    "Allow clients to book appointments via WhatsApp",
+    "Enable clients to reschedule existing appointments",
+    "Allow clients to cancel scheduled appointments",
+    "Send reminders to clients via WhatsApp",
+    "Synchronize appointments with Google Calendar"
+  ],
+  "main_components": [
+    "WhatsApp Bot Interface",
+    "Appointment Management System",
+    "Google Calendar Integration Module",
+    "Notification and Reminder System"
+  ],
+  "assumptions": [
+    "Clients have access to WhatsApp for communications.",
+    "Service providers use Google Calendar for managing their schedules.",
+    "WhatsApp provides an API for integration with the assistant.",
+    "Google Calendar API is used for synchronization."
+  ],
+  "open_questions": [
+    "What level of personalization is required in the reminders sent to clients?",
+    "How will the system authenticate access to a user's Google Calendar?",
+    "What are the privacy and security measures that need to be in place for handling client data?"
+  ]
+}

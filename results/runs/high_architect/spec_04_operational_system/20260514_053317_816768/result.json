@@ -1,0 +1,666 @@
+{
+  "input": {
+    "text": "Build a warehouse monitoring system that alerts managers when refrigeration units drift outside safe temperature ranges."
+  },
+  "final_output": {
+    "system_name": "Warehouse Temperature Monitoring System",
+    "goal": "To monitor refrigeration units and alert managers when temperatures drift outside predefined safe ranges.",
+    "users": [
+      "Warehouse Managers"
+    ],
+    "core_capabilities": [
+      "Monitor temperature of refrigeration units",
+      "Detect temperatures outside safe range",
+      "Send alerts to managers"
+    ],
+    "main_components": [
+      "Temperature Sensors",
+      "Temperature Monitoring Service",
+      "Alert Notification Service"
+    ],
+    "assumptions": [
+      "Temperature sensors are reliable and have necessary accuracy."
+    ],
+    "open_questions": [
+      "What are the exact safe temperature ranges for different refrigeration categories?",
+      "What methods should be used to alert the managers (e.g., email, SMS, notifications)?"
+    ]
+  },
+  "final_evaluation": {
+    "score": 1.0,
+    "passed": true,
+    "field_grounding": [
+      {
+        "field_path": "system_name",
+        "value": "Warehouse Temperature Monitoring System",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "The raw spec mentions a 'warehouse monitoring system', directly related to temperature, implying the system name."
+      },
+      {
+        "field_path": "goal",
+        "value": "To monitor refrigeration units and alert managers when temperatures drift outside predefined safe ranges.",
+        "verdict": "explicitly_supported",
+        "source_quote": "Build a warehouse monitoring system that alerts managers when refrigeration units drift outside safe temperature ranges.",
+        "explanation": "The goal directly matches the raw specification."
+      },
+      {
+        "field_path": "users[0]",
+        "value": "Warehouse Managers",
+        "verdict": "explicitly_supported",
+        "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+        "explanation": "The raw spec directly mentions alerting 'managers'."
+      },
+      {
+        "field_path": "core_capabilities[0]",
+        "value": "Monitor temperature of refrigeration units",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "Monitoring temperature is a necessary capability to alert managers about temperature drift."
+      },
+      {
+        "field_path": "core_capabilities[1]",
+        "value": "Detect temperatures outside safe range",
+        "verdict": "explicitly_supported",
+        "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+        "explanation": "The raw spec involves detecting temperature drift, thus supporting this capability."
+      },
+      {
+        "field_path": "core_capabilities[2]",
+        "value": "Send alerts to managers",
+        "verdict": "explicitly_supported",
+        "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+        "explanation": "Sending alerts is directly mentioned as part of the raw spec."
+      },
+      {
+        "field_path": "main_components[0]",
+        "value": "Temperature Sensors",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "Temperature sensors are a necessary component to monitor refrigeration unit temperatures."
+      },
+      {
+        "field_path": "main_components[1]",
+        "value": "Temperature Monitoring Service",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "A service for monitoring temperature is implied as necessary to provide real-time alerts."
+      },
+      {
+        "field_path": "main_components[2]",
+        "value": "Alert Notification Service",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "An alert notification service is necessary to send alerts to managers about temperature drifts."
+      },
+      {
+        "field_path": "assumptions[0]",
+        "value": "Temperature sensors are reliable and have necessary accuracy.",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "While the accuracy of sensors is important, the raw spec doesn't mention it, making this a reasonable assumption."
+      },
+      {
+        "field_path": "open_questions[0]",
+        "value": "What are the exact safe temperature ranges for different refrigeration categories?",
+        "verdict": "explicitly_supported",
+        "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+        "explanation": "Determining the exact safe temperature ranges is critical to setting up alert thresholds."
+      },
+      {
+        "field_path": "open_questions[1]",
+        "value": "What methods should be used to alert the managers (e.g., email, SMS, notifications)?",
+        "verdict": "explicitly_supported",
+        "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+        "explanation": "The methods for alerting managers are not specified and need clarification."
+      }
+    ],
+    "missing_requirements": [],
+    "distorted_requirements": [],
+    "hallucinated_requirements": [],
+    "justified_inferences": [
+      "system_name",
+      "core_capabilities[0]",
+      "main_components[0]",
+      "main_components[1]",
+      "main_components[2]"
+    ],
+    "weak_inferences": [
+      "assumptions[0]"
+    ],
+    "improvement_tip": "Ensure all assumptions are explicitly stated in open questions or supported by the specification.",
+    "failure_reason": null
+  },
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "output": {
+        "system_name": "Warehouse Monitoring System",
+        "goal": "To monitor refrigeration units and alert managers if temperatures drift outside safe ranges.",
+        "users": [
+          "Warehouse Managers",
+          "Maintenance Staff"
+        ],
+        "core_capabilities": [
+          "Monitor temperatures of refrigeration units continuously.",
+          "Compare current temperatures against defined safe temperature ranges.",
+          "Generate alerts if temperatures drift outside safe limits.",
+          "Provide a user interface for managers to view current and historical temperature data."
+        ],
+        "main_components": [
+          "Temperature Sensors: Deployed within refrigeration units to collect temperature data.",
+          "Monitoring Server: Centralized service to receive and process temperature data from all sensors.",
+          "Alert System: Component to generate and send alerts via email/SMS to managers.",
+          "Web Interface: User-facing component to display real-time and historical temperature data."
+        ],
+        "assumptions": [
+          "The warehouse is equipped with IoT-enabled temperature sensors capable of sending data to a central server.",
+          "Managers are reachable via email or SMS for alert notifications.",
+          "Safe temperature ranges for different units are predefined and configurable."
+        ],
+        "open_questions": [
+          "What specific communication protocols should be used between sensors and the monitoring server?",
+          "How frequently should temperature data be sampled and processed?",
+          "What are the escalation protocols if the primary alert is not acknowledged?",
+          "Is there a preference for cloud-based vs on-premise deployment for the monitoring server and data storage?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.55,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Warehouse Monitoring System",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a warehouse monitoring system",
+            "explanation": "The requirement to build a 'warehouse monitoring system' is directly stated in the raw specification."
+          },
+          {
+            "field_path": "goal",
+            "value": "To monitor refrigeration units and alert managers if temperatures drift outside safe ranges.",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges",
+            "explanation": "The goal in the HLD matches the raw specification's requirement to alert managers about temperature deviations."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Warehouse Managers",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges",
+            "explanation": "The raw specification mentions 'managers' should be alerted, supporting their inclusion as users."
+          },
+          {
+            "field_path": "users[1]",
+            "value": "Maintenance Staff",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention 'Maintenance Staff' as users. Their inclusion is unsupported."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Monitor temperatures of refrigeration units continuously.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Continual monitoring is necessary to detect deviations from safe temperature ranges, strongly implying this capability."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Compare current temperatures against defined safe temperature ranges.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "To alert managers when temperatures drift outside of safe ranges, the system must compare temperatures against those ranges."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Generate alerts if temperatures drift outside safe limits.",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges",
+            "explanation": "The specification explicitly mentions this capability."
+          },
+          {
+            "field_path": "core_capabilities[3]",
+            "value": "Provide a user interface for managers to view current and historical temperature data.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While a user interface may be useful, it is not strictly required nor strongly implied by the raw specification."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Temperature Sensors: Deployed within refrigeration units to collect temperature data.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Sensors are a necessary component to monitor refrigeration unit temperatures."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Monitoring Server: Centralized service to receive and process temperature data from all sensors.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A monitoring server is likely required for collecting and processing data from sensors."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Alert System: Component to generate and send alerts via email/SMS to managers.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While an alert system is necessary, the specification does not specify email/SMS for sending alerts."
+          },
+          {
+            "field_path": "main_components[3]",
+            "value": "Web Interface: User-facing component to display real-time and historical temperature data.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The specification does not mention the need for a web interface to display temperature data."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "The warehouse is equipped with IoT-enabled temperature sensors capable of sending data to a central server.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "IoT-enabled sensors are strongly implied as necessary for monitoring temperatures."
+          },
+          {
+            "field_path": "assumptions[1]",
+            "value": "Managers are reachable via email or SMS for alert notifications.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "There is no mention of email or SMS alerts in the raw specification."
+          },
+          {
+            "field_path": "assumptions[2]",
+            "value": "Safe temperature ranges for different units are predefined and configurable.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Safe temperature ranges must be predefined to determine when units drift outside them."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What specific communication protocols should be used between sensors and the monitoring server?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "This is a valid question as communication protocols are necessary for sensor-server interaction."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "How frequently should temperature data be sampled and processed?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Sampling frequency is important for effective monitoring, making this question strongly implied."
+          },
+          {
+            "field_path": "open_questions[2]",
+            "value": "What are the escalation protocols if the primary alert is not acknowledged?",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Escalation protocols are not mentioned in the specification, making this a weak inference."
+          },
+          {
+            "field_path": "open_questions[3]",
+            "value": "Is there a preference for cloud-based vs on-premise deployment for the monitoring server and data storage?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention anything regarding deployment preferences."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "users[1]",
+          "core_capabilities[3]",
+          "main_components[3]",
+          "assumptions[1]",
+          "open_questions[3]"
+        ],
+        "justified_inferences": [
+          "core_capabilities[0]",
+          "core_capabilities[1]",
+          "main_components[0]",
+          "main_components[1]",
+          "assumptions[0]",
+          "assumptions[2]",
+          "open_questions[0]",
+          "open_questions[1]"
+        ],
+        "weak_inferences": [
+          "main_components[2]",
+          "open_questions[2]"
+        ],
+        "improvement_tip": "Remove unsupported users, components, and assumptions. Clarify and justify the necessity of user interface and alerting methods within the raw specification context.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=5, score=0.55"
+      },
+      "metrics": {
+        "total_fields": 19,
+        "explicit_support_rate": 0.21052631578947367,
+        "strong_inference_rate": 0.42105263157894735,
+        "weak_inference_rate": 0.15789473684210525,
+        "unsupported_rate": 0.21052631578947367,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.21052631578947367,
+        "core_capability_coverage": 0.75,
+        "hallucination_count": 5,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 2,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 1,
+        "grounding_score": 0.6105263157894738,
+        "preservation_score": 0.0,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 2,
+      "output": {
+        "system_name": "Warehouse Refrigeration Monitoring System",
+        "goal": "To monitor refrigeration units and alert managers when temperatures are outside safe ranges.",
+        "users": [
+          "Warehouse Managers"
+        ],
+        "core_capabilities": [
+          "Monitor temperature of refrigeration units.",
+          "Detect when temperatures drift outside predefined safe ranges.",
+          "Alert managers upon detection of unsafe temperature ranges."
+        ],
+        "main_components": [
+          "Temperature Monitoring Sensors: Collect real-time temperature data from refrigeration units.",
+          "Monitoring Software: Analyzes temperature data to detect deviations from safe ranges.",
+          "Alerting Mechanism: Issues alerts to managers when unsafe temperature conditions are detected."
+        ],
+        "assumptions": [
+          "Managers have appropriate means to receive alerts."
+        ],
+        "open_questions": [
+          "What are the specific temperature ranges deemed unsafe for each type of refrigeration unit?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.9,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Warehouse Refrigeration Monitoring System",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a warehouse monitoring system that alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "The system name is a variation of the specification, focused on refrigeration units and management alerts."
+          },
+          {
+            "field_path": "goal",
+            "value": "To monitor refrigeration units and alert managers when temperatures are outside safe ranges.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a warehouse monitoring system that alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "The goal matches the purpose stated in the specification."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Warehouse Managers",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "Warehouse Managers are explicitly the users to receive alerts."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Monitor temperature of refrigeration units.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Monitoring the temperature is essential to determine when it drifts outside safe ranges."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Detect when temperatures drift outside predefined safe ranges.",
+            "verdict": "explicitly_supported",
+            "source_quote": "drift outside safe temperature ranges.",
+            "explanation": "The detection of drifts is directly mentioned in the specification."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Alert managers upon detection of unsafe temperature ranges.",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "Alerting managers is a core requirement per the specification."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Temperature Monitoring Sensors: Collect real-time temperature data from refrigeration units.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Sensors are necessary to collect temperature data for monitoring purposes."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Monitoring Software: Analyzes temperature data to detect deviations from safe ranges.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Software is needed to analyze the collected data and compare it to safe ranges."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Alerting Mechanism: Issues alerts to managers when unsafe temperature conditions are detected.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "An alerting mechanism is required to notify managers as specified."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Managers have appropriate means to receive alerts.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The specification does not mention how managers receive alerts, thus this assumption lacks grounding."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What are the specific temperature ranges deemed unsafe for each type of refrigeration unit?",
+            "verdict": "explicitly_supported",
+            "source_quote": "drift outside safe temperature ranges.",
+            "explanation": "The specification mentions 'safe temperature ranges', but does not define them, making this a valid open question."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "assumptions[0]"
+        ],
+        "justified_inferences": [
+          "core_capabilities[0]",
+          "main_components[0]",
+          "main_components[1]",
+          "main_components[2]"
+        ],
+        "weak_inferences": [],
+        "improvement_tip": "Remove unsupported assumptions or ensure they are clearly marked as questions or assumptions based on the raw specification.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=1, score=0.9"
+      },
+      "metrics": {
+        "total_fields": 11,
+        "explicit_support_rate": 0.5454545454545454,
+        "strong_inference_rate": 0.36363636363636365,
+        "weak_inference_rate": 0.0,
+        "unsupported_rate": 0.09090909090909091,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.5454545454545454,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 1,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.8363636363636363,
+        "preservation_score": 0.8,
+        "risk_score": 0.8,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 3,
+      "output": {
+        "system_name": "Warehouse Temperature Monitoring System",
+        "goal": "To monitor refrigeration units and alert managers when temperatures drift outside predefined safe ranges.",
+        "users": [
+          "Warehouse Managers"
+        ],
+        "core_capabilities": [
+          "Monitor temperature of refrigeration units",
+          "Detect temperatures outside safe range",
+          "Send alerts to managers"
+        ],
+        "main_components": [
+          "Temperature Sensors",
+          "Temperature Monitoring Service",
+          "Alert Notification Service"
+        ],
+        "assumptions": [
+          "Temperature sensors are reliable and have necessary accuracy."
+        ],
+        "open_questions": [
+          "What are the exact safe temperature ranges for different refrigeration categories?",
+          "What methods should be used to alert the managers (e.g., email, SMS, notifications)?"
+        ]
+      },
+      "evaluation": {
+        "score": 1.0,
+        "passed": true,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Warehouse Temperature Monitoring System",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The raw spec mentions a 'warehouse monitoring system', directly related to temperature, implying the system name."
+          },
+          {
+            "field_path": "goal",
+            "value": "To monitor refrigeration units and alert managers when temperatures drift outside predefined safe ranges.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Build a warehouse monitoring system that alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "The goal directly matches the raw specification."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Warehouse Managers",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "The raw spec directly mentions alerting 'managers'."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Monitor temperature of refrigeration units",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Monitoring temperature is a necessary capability to alert managers about temperature drift."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Detect temperatures outside safe range",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "The raw spec involves detecting temperature drift, thus supporting this capability."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Send alerts to managers",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "Sending alerts is directly mentioned as part of the raw spec."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Temperature Sensors",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Temperature sensors are a necessary component to monitor refrigeration unit temperatures."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Temperature Monitoring Service",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A service for monitoring temperature is implied as necessary to provide real-time alerts."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Alert Notification Service",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "An alert notification service is necessary to send alerts to managers about temperature drifts."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Temperature sensors are reliable and have necessary accuracy.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While the accuracy of sensors is important, the raw spec doesn't mention it, making this a reasonable assumption."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What are the exact safe temperature ranges for different refrigeration categories?",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "Determining the exact safe temperature ranges is critical to setting up alert thresholds."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "What methods should be used to alert the managers (e.g., email, SMS, notifications)?",
+            "verdict": "explicitly_supported",
+            "source_quote": "alerts managers when refrigeration units drift outside safe temperature ranges.",
+            "explanation": "The methods for alerting managers are not specified and need clarification."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [],
+        "justified_inferences": [
+          "system_name",
+          "core_capabilities[0]",
+          "main_components[0]",
+          "main_components[1]",
+          "main_components[2]"
+        ],
+        "weak_inferences": [
+          "assumptions[0]"
+        ],
+        "improvement_tip": "Ensure all assumptions are explicitly stated in open questions or supported by the specification.",
+        "failure_reason": null
+      },
+      "metrics": {
+        "total_fields": 12,
+        "explicit_support_rate": 0.5,
+        "strong_inference_rate": 0.4166666666666667,
+        "weak_inference_rate": 0.08333333333333333,
+        "unsupported_rate": 0.0,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.5,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 0,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 1,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.8666666666666667,
+        "preservation_score": 1.0,
+        "risk_score": 0.1,
+        "blocking_failure": false
+      }
+    }
+  ],
+  "run_convergence": {
+    "attempts": 3,
+    "converged": true,
+    "status": "PASS",
+    "initial_risk_score": 1.0,
+    "final_risk_score": 0.1,
+    "risk_reduction": 0.9,
+    "initial_blocking_failures": 1,
+    "final_blocking_failures": 0,
+    "blocking_failures_removed": 1,
+    "initial_hallucination_count": 5,
+    "final_hallucination_count": 0,
+    "hallucinations_removed": 5,
+    "final_preservation_score": 1.0,
+    "final_core_capability_coverage": 1.0,
+    "convergence_score": 0.97
+  }
+}

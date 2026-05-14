@@ -1,10 +1,10 @@
 import csv
-import json
 import os
 import uuid
 
 from artifact_loop.models import RawSpec
 from artifact_loop.high_architect import HighArchitectStage
+from artifact_loop.artifact_store import ArtifactStore
 
 SPECS = [
     (
@@ -76,19 +76,21 @@ def main():
     os.makedirs(results_dir, exist_ok=True)
     print(f"Run ID: {run_id}")
 
-    stage = HighArchitectStage(threshold=0.95, risk_threshold=0.35, max_attempts=3)
+    store = ArtifactStore(base_dir="results/runs")
 
     rows = []
 
     for slug, spec_text in SPECS:
         print(f"\n>>> Running {slug} ...")
         raw = RawSpec(text=spec_text)
+        stage = HighArchitectStage(
+            threshold=0.95,
+            risk_threshold=0.35,
+            max_attempts=3,
+            artifact_store=store,
+            stage_name=f"high_architect/{slug}",
+        )
         result = stage.run(raw)
-
-        out_path = os.path.join(results_dir, f"{slug}.json")
-        with open(out_path, "w") as f:
-            json.dump(result.model_dump(), f, indent=2)
-        print(f"    Saved → {out_path}")
 
         m = result.run_convergence
         lm = result.attempts[-1].metrics

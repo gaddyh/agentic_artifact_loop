@@ -1,5 +1,6 @@
 from artifact_loop.models import RawSpec
 from artifact_loop.high_architect import HighArchitectStage
+from artifact_loop.artifact_store import ArtifactStore
 
 
 raw = RawSpec(
@@ -10,7 +11,14 @@ raw = RawSpec(
     """
 )
 
-stage = HighArchitectStage(threshold=0.95, max_attempts=3)
+store = ArtifactStore(base_dir="results/runs")
+stage = HighArchitectStage(
+    threshold=0.95,
+    risk_threshold=0.35,
+    max_attempts=3,
+    artifact_store=store,
+    stage_name="high_architect",
+)
 result = stage.run(raw)
 
 print("\n=== FINAL HLD ===")

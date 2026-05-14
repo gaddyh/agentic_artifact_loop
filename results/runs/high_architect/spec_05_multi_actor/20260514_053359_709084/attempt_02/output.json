@@ -1,0 +1,26 @@
+{
+  "system_name": "Freelance Music Lessons Marketplace",
+  "goal": "To connect freelance music teachers and students for recurring lessons with a rating system.",
+  "users": [
+    "Freelance Music Teachers",
+    "Students"
+  ],
+  "core_capabilities": [
+    "Connect freelance music teachers with students",
+    "Schedule recurring music lessons",
+    "Rate lessons and provide feedback after each session"
+  ],
+  "main_components": [
+    "User Profile Management",
+    "Lesson Scheduling System",
+    "Rating and Feedback System",
+    "Search and Discovery Mechanism"
+  ],
+  "assumptions": [
+    "Teachers and students sign up voluntarily for the platform."
+  ],
+  "open_questions": [
+    "How will recurring lessons be managed and tracked?",
+    "What kinds of ratings and feedback can users provide?"
+  ]
+}
