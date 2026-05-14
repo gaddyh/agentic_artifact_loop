@@ -24,7 +24,7 @@ def _get_client() -> OpenAI:
 def complete_structured(
     messages: list[dict],
     response_model: Type[T],
-    model: str = "gpt-4o-2024-08-06",
+    model: str = "gpt-4o",
 ) -> T:
     client = _get_client()
     completion = client.beta.chat.completions.parse(

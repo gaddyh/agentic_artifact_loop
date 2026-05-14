@@ -16,9 +16,6 @@ result = stage.run(raw)
 print("\n=== FINAL HLD ===")
 print(result.final_output.model_dump_json(indent=2))
 
-print("\n=== RECONSTRUCTED SPEC ===")
-print(result.final_reconstruction.text)
-
 print("\n=== EVALUATION ===")
 print(result.final_evaluation.model_dump_json(indent=2))
 
@@ -27,7 +24,13 @@ for attempt in result.attempts:
     print(f"\n--- Attempt {attempt.attempt_number} ---")
     print("HLD:")
     print(attempt.output.model_dump_json(indent=2))
-    print("Reconstructed:")
-    print(attempt.reconstructed.text)
     print("Evaluation:")
     print(attempt.evaluation.model_dump_json(indent=2))
+
+print("\n=== ATTEMPTS ===")
+for attempt in result.attempts:
+    print("\nMetrics:")
+    print(attempt.metrics.model_dump_json(indent=2))
+
+print("\n=== RUN CONVERGENCE ===")
+print(result.run_convergence.model_dump_json(indent=2))
