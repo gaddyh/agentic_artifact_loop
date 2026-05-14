@@ -1,0 +1,880 @@
+{
+  "input": {
+    "text": "I want an AI second brain for my life."
+  },
+  "final_output": {
+    "system_name": "My AI Second Brain",
+    "goal": "To create a digital assistant that functions as a 'second brain' for managing personal tasks, information, and insights.",
+    "users": [
+      "Individuals seeking enhanced personal productivity",
+      "Tech-savvy users needing digital organization",
+      "Busy professionals juggling numerous tasks"
+    ],
+    "core_capabilities": [
+      "Store and categorize personal information and notes",
+      "Dynamic task management with prioritization",
+      "Generate insights and analytics based on user data",
+      "Integration with personal calendar and reminder systems",
+      "Searched and retrieval of stored information efficiently",
+      "Support for voice commands and conversational interface"
+    ],
+    "main_components": [
+      "Information Storage Module",
+      "Task Management Module",
+      "Analytics and Insight Generation Module",
+      "User Interface with Conversational AI",
+      "Integration Layer for third-party apps"
+    ],
+    "assumptions": [
+      "The user has a smartphone for mobile access to the system.",
+      "The user is willing to share personal data with the system to enhance functionality.",
+      "Users are comfortable with digital integration of their personal data."
+    ],
+    "open_questions": [
+      "What level of privacy and security measures will be implemented to protect user data?",
+      "What are the specific analytic capabilities desired by the user?",
+      "How will the system adapt to changing user preferences and tasks over time?"
+    ]
+  },
+  "final_evaluation": {
+    "score": 0.0,
+    "passed": false,
+    "field_grounding": [
+      {
+        "field_path": "system_name",
+        "value": "My AI Second Brain",
+        "verdict": "strongly_implied",
+        "source_quote": "I want an AI second brain for my life.",
+        "explanation": "The system name is a direct adaptation of the raw specification."
+      },
+      {
+        "field_path": "goal",
+        "value": "To create a digital assistant that functions as a 'second brain' for managing personal tasks, information, and insights.",
+        "verdict": "strongly_implied",
+        "source_quote": "I want an AI second brain for my life.",
+        "explanation": "The goal clarifies the role of the AI second brain as a personal assistant, which is implied by the raw specification's desire for an AI second brain."
+      },
+      {
+        "field_path": "users",
+        "value": "Individuals seeking enhanced personal productivity",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "The raw specification does not mention users. However, the concept of a personal second brain supports personal productivity, but the specific user type is not specified."
+      },
+      {
+        "field_path": "users",
+        "value": "Tech-savvy users needing digital organization",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "The raw specification does not specify user types; this is added without grounding."
+      },
+      {
+        "field_path": "users",
+        "value": "Busy professionals juggling numerous tasks",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "The raw specification does not specify user types; this is added without grounding."
+      },
+      {
+        "field_path": "core_capabilities",
+        "value": "Store and categorize personal information and notes",
+        "verdict": "strongly_implied",
+        "source_quote": "I want an AI second brain for my life.",
+        "explanation": "An AI second brain would naturally store and categorize information as part of being a 'second brain' for organizing tasks."
+      },
+      {
+        "field_path": "core_capabilities",
+        "value": "Dynamic task management with prioritization",
+        "verdict": "strongly_implied",
+        "source_quote": "I want an AI second brain for my life.",
+        "explanation": "Task management and prioritization are strongly implied as functionalities of a 'second brain' assisting with life tasks."
+      },
+      {
+        "field_path": "core_capabilities",
+        "value": "Generate insights and analytics based on user data",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "While providing insights could be part of a second brain, this specific functionality of generating analytics is not clearly grounded in the raw spec."
+      },
+      {
+        "field_path": "core_capabilities",
+        "value": "Integration with personal calendar and reminder systems",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "Integration with calendars and reminders could be beneficial but is not specified in the raw specification."
+      },
+      {
+        "field_path": "core_capabilities",
+        "value": "Searched and retrieval of stored information efficiently",
+        "verdict": "strongly_implied",
+        "source_quote": "I want an AI second brain for my life.",
+        "explanation": "Efficient retrieval is a necessary aspect of managing stored information, thus strongly implied."
+      },
+      {
+        "field_path": "core_capabilities",
+        "value": "Support for voice commands and conversational interface",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "Voice commands are not mentioned or implied in the raw specification and are introduced without grounding."
+      },
+      {
+        "field_path": "main_components",
+        "value": "Information Storage Module",
+        "verdict": "strongly_implied",
+        "source_quote": "I want an AI second brain for my life.",
+        "explanation": "Storage of information is a foundational requirement for a second brain."
+      },
+      {
+        "field_path": "main_components",
+        "value": "Task Management Module",
+        "verdict": "strongly_implied",
+        "source_quote": "I want an AI second brain for my life.",
+        "explanation": "Managing tasks is a necessary aspect of having a second brain."
+      },
+      {
+        "field_path": "main_components",
+        "value": "Analytics and Insight Generation Module",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "An analytics module is not directly implied but could be inferred to align with the concept of deriving insights."
+      },
+      {
+        "field_path": "main_components",
+        "value": "User Interface with Conversational AI",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "Conversational AI is not mentioned or strongly implied in the raw specification."
+      },
+      {
+        "field_path": "main_components",
+        "value": "Integration Layer for third-party apps",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "Integration with third-party apps is not specified or strongly implied by the raw specification."
+      },
+      {
+        "field_path": "assumptions",
+        "value": "The user has a smartphone for mobile access to the system.",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "The raw spec does not imply any device-specific assumption."
+      },
+      {
+        "field_path": "assumptions",
+        "value": "The user is willing to share personal data with the system to enhance functionality.",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "Sharing personal data could be inferred but is not explicitly required by the raw spec."
+      },
+      {
+        "field_path": "assumptions",
+        "value": "Users are comfortable with digital integration of their personal data.",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "Such a user acceptance assumption is added without reference or implication in the raw spec."
+      },
+      {
+        "field_path": "open_questions",
+        "value": "What level of privacy and security measures will be implemented to protect user data?",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "While security is generally important, the raw spec doesn't state this concern."
+      },
+      {
+        "field_path": "open_questions",
+        "value": "What are the specific analytic capabilities desired by the user?",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "The raw specification does not mention the need for analytics, making this question appear speculative rather than grounded in expressed needs."
+      },
+      {
+        "field_path": "open_questions",
+        "value": "How will the system adapt to changing user preferences and tasks over time?",
+        "verdict": "unsupported",
+        "source_quote": null,
+        "explanation": "The adaptation feature is not mentioned or implied by the raw specification."
+      }
+    ],
+    "missing_requirements": [
+      "AI capabilities beyond data storage and task management"
+    ],
+    "distorted_requirements": [],
+    "hallucinated_requirements": [
+      "users[1]",
+      "users[2]",
+      "core_capabilities[5]",
+      "main_components[3]",
+      "main_components[4]",
+      "assumptions[0]",
+      "assumptions[2]",
+      "open_questions[1]",
+      "open_questions[2]"
+    ],
+    "justified_inferences": [],
+    "weak_inferences": [
+      "users[0]",
+      "core_capabilities[2]",
+      "core_capabilities[3]",
+      "main_components[2]",
+      "assumptions[1]",
+      "open_questions[0]"
+    ],
+    "improvement_tip": "Ensure every feature and component directly relates to the AI second brain concept without incorporating unsupported assumptions or speculative capabilities.",
+    "failure_reason": "Failed grounding gate: missing=1, distorted=0, hallucinated=9, score=0.0"
+  },
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "output": {
+        "system_name": "AI Second Brain",
+        "goal": "To serve as an intelligent repository and personal assistant that organizes, retrieves, and enhances personal information to improve productivity and life management.",
+        "users": [
+          "Individuals seeking organized information storage and retrieval",
+          "Users looking for enhanced productivity tools",
+          "Individuals desiring personalized life management assistance"
+        ],
+        "core_capabilities": [
+          "Store and organize personal information efficiently",
+          "Retrieve information based on natural language queries",
+          "Provide reminders and alerts for important tasks and events",
+          "Enhance and optimize personal data with insights and recommendations",
+          "Integrate with existing digital tools and platforms",
+          "Adapt and personalize interactions based on user behavior and preferences"
+        ],
+        "main_components": [
+          "Data Storage Manager",
+          "Natural Language Processing Module",
+          "Reminder and Alert System",
+          "Insights and Recommendations Engine",
+          "Integration API",
+          "User Interface Components"
+        ],
+        "assumptions": [
+          "Users will provide access to their personal data and digital tools.",
+          "The system will operate within privacy regulations and policies.",
+          "Users desire personalized insights based on their data."
+        ],
+        "open_questions": [
+          "What are the specific data types and sources the AI should manage?",
+          "How will privacy and data security be ensured?",
+          "What level of support is provided for integration with third-party applications?",
+          "What are the key metrics for evaluating the system's effectiveness?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.15,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "AI Second Brain",
+            "verdict": "explicitly_supported",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "The system name 'AI Second Brain' is directly supported by the raw specification."
+          },
+          {
+            "field_path": "goal",
+            "value": "To serve as an intelligent repository and personal assistant that organizes, retrieves, and enhances personal information to improve productivity and life management.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "The raw specification's desire for an 'AI second brain' implies organization and assistance, but specifics like 'retrieving', 'enhancing', and 'improving productivity' are not directly specified."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Individuals seeking organized information storage and retrieval",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "The desire for an 'AI second brain' might imply information organization but is not explicitly stated."
+          },
+          {
+            "field_path": "users[1]",
+            "value": "Users looking for enhanced productivity tools",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "The raw spec does not explicitly mention productivity tools, although it could be a weakly implied function of a second brain."
+          },
+          {
+            "field_path": "users[2]",
+            "value": "Individuals desiring personalized life management assistance",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Life management assistance is not directly mentioned in the raw spec though it can be a weak inference from 'second brain.'"
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Store and organize personal information efficiently",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A desire for an 'AI second brain' strongly implies the ability to store and organize information."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Retrieve information based on natural language queries",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Information retrieval is more specific than implied by 'AI second brain'. Natural language query support is not mentioned or implied."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Provide reminders and alerts for important tasks and events",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "There is no mention of reminders or alerts in the raw spec."
+          },
+          {
+            "field_path": "core_capabilities[3]",
+            "value": "Enhance and optimize personal data with insights and recommendations",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Enhancing and optimizing data with insights and recommendations is not mentioned or implied in the spec."
+          },
+          {
+            "field_path": "core_capabilities[4]",
+            "value": "Integrate with existing digital tools and platforms",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Integration with digital tools and platforms is not mentioned or implied in the spec."
+          },
+          {
+            "field_path": "core_capabilities[5]",
+            "value": "Adapt and personalize interactions based on user behavior and preferences",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "There is no mention of adapting and personalizing interactions based on user behavior in the raw spec."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Data Storage Manager",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Storing and organizing data implies the need for a Data Storage Manager."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Natural Language Processing Module",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While interaction might suggest some processing, the raw spec does not imply natural language support."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Reminder and Alert System",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "This component is unsupported as reminders and alerts are not mentioned."
+          },
+          {
+            "field_path": "main_components[3]",
+            "value": "Insights and Recommendations Engine",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Enhancing data with insights and recommendations is not mentioned in the raw spec."
+          },
+          {
+            "field_path": "main_components[4]",
+            "value": "Integration API",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Integration features are not mentioned or implied in the raw spec."
+          },
+          {
+            "field_path": "main_components[5]",
+            "value": "User Interface Components",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Any interactive system will require user interface components."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Users will provide access to their personal data and digital tools.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "There is no mention of users providing access to their digital tools in the raw spec."
+          },
+          {
+            "field_path": "assumptions[1]",
+            "value": "The system will operate within privacy regulations and policies.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Privacy regulations are not mentioned or implied in the raw spec."
+          },
+          {
+            "field_path": "assumptions[2]",
+            "value": "Users desire personalized insights based on their data.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Personalized insights are not mentioned in the raw spec."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What are the specific data types and sources the AI should manage?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Understanding data types and sources would be an essential question for building a 'second brain'."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "How will privacy and data security be ensured?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Privacy and data security are not mentioned in the spec and thus unsupported."
+          },
+          {
+            "field_path": "open_questions[2]",
+            "value": "What level of support is provided for integration with third-party applications?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "There is no mention in the spec of integration with third-party applications."
+          },
+          {
+            "field_path": "open_questions[3]",
+            "value": "What are the key metrics for evaluating the system's effectiveness?",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While evaluating effectiveness is reasonable, it is not implied by the brief spec."
+          }
+        ],
+        "missing_requirements": [
+          "The system must function as an AI second brain for the user, as stated in the raw spec."
+        ],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "core_capabilities[2]",
+          "core_capabilities[3]",
+          "core_capabilities[4]",
+          "core_capabilities[5]",
+          "main_components[2]",
+          "main_components[3]",
+          "main_components[4]",
+          "assumptions[0]",
+          "assumptions[1]",
+          "assumptions[2]",
+          "open_questions[1]",
+          "open_questions[2]"
+        ],
+        "justified_inferences": [],
+        "weak_inferences": [
+          "goal",
+          "users[0]",
+          "users[1]",
+          "users[2]",
+          "core_capabilities[1]",
+          "main_components[1]",
+          "open_questions[3]"
+        ],
+        "improvement_tip": "Focus on grounding each element of the design in the raw specification, ensuring that any extensions or enhancements are either strongly implied or included as assumptions or open questions.",
+        "failure_reason": "Failed grounding gate: missing=1, distorted=0, hallucinated=12, score=0.15"
+      },
+      "metrics": {
+        "total_fields": 24,
+        "explicit_support_rate": 0.041666666666666664,
+        "strong_inference_rate": 0.16666666666666666,
+        "weak_inference_rate": 0.2916666666666667,
+        "unsupported_rate": 0.5,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.041666666666666664,
+        "core_capability_coverage": 0.16666666666666666,
+        "hallucination_count": 12,
+        "missing_count": 1,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 6,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 1,
+        "grounding_score": 0.2916666666666667,
+        "preservation_score": 0.0,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 2,
+      "output": {
+        "system_name": "AI Second Brain System",
+        "goal": "To function as an AI second brain for individual users, enhancing their ability to store and manage personal knowledge and tasks.",
+        "users": [
+          "Individuals seeking an AI-assisted augmentation of their personal knowledge management."
+        ],
+        "core_capabilities": [
+          "Store personal information in a structurable format.",
+          "Assist with the organization of tasks and ideas."
+        ],
+        "main_components": [
+          "Data Storage Module",
+          "Organization and Management Module"
+        ],
+        "assumptions": [
+          "Users will input personal information to store and organize."
+        ],
+        "open_questions": [
+          "What specific functionalities are expected by users from an 'AI second brain'?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.5,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "AI Second Brain System",
+            "verdict": "explicitly_supported",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "The system name directly reflects the title requested in the raw specification."
+          },
+          {
+            "field_path": "goal",
+            "value": "To function as an AI second brain for individual users, enhancing their ability to store and manage personal knowledge and tasks.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "An AI second brain implies functionality for storing and managing information, as suggested by its metaphorical role."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Individuals seeking an AI-assisted augmentation of their personal knowledge management.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The raw spec implies the main users are individuals who desire a second brain replacement."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Store personal information in a structurable format.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "For an AI second brain, storing information logically and accessibly is strongly implied."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Assist with the organization of tasks and ideas.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "An AI second brain would naturally help in organizing ideas as an extension of its functionality."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Data Storage Module",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Storing information implies the necessity of a data storage component."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Organization and Management Module",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Organizing tasks naturally requires an organizational component module."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Users will input personal information to store and organize.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "To become a second brain, user inputs of personal information are essential."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What specific functionalities are expected by users from an 'AI second brain'?",
+            "verdict": "explicitly_supported",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "The raw spec does not detail specific functionalities, marking it an open question."
+          }
+        ],
+        "missing_requirements": [
+          "dynamic task management",
+          "analytics and insight generation"
+        ],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [],
+        "justified_inferences": [
+          "goal",
+          "users[0]",
+          "core_capabilities[0]",
+          "core_capabilities[1]",
+          "main_components[0]",
+          "main_components[1]",
+          "assumptions[0]"
+        ],
+        "weak_inferences": [],
+        "improvement_tip": "Ensure to address all potential core functionalities such as dynamic task management and include analytics generation if applicable. Clarify specific requirements for 'AI second brain' to avoid ambivalence.",
+        "failure_reason": "Failed grounding gate: missing=2, distorted=0, hallucinated=0, score=0.5"
+      },
+      "metrics": {
+        "total_fields": 9,
+        "explicit_support_rate": 0.2222222222222222,
+        "strong_inference_rate": 0.7777777777777778,
+        "weak_inference_rate": 0.0,
+        "unsupported_rate": 0.0,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.2222222222222222,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 0,
+        "missing_count": 2,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.8444444444444446,
+        "preservation_score": 0.5,
+        "risk_score": 0.7,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 3,
+      "output": {
+        "system_name": "My AI Second Brain",
+        "goal": "To create a digital assistant that functions as a 'second brain' for managing personal tasks, information, and insights.",
+        "users": [
+          "Individuals seeking enhanced personal productivity",
+          "Tech-savvy users needing digital organization",
+          "Busy professionals juggling numerous tasks"
+        ],
+        "core_capabilities": [
+          "Store and categorize personal information and notes",
+          "Dynamic task management with prioritization",
+          "Generate insights and analytics based on user data",
+          "Integration with personal calendar and reminder systems",
+          "Searched and retrieval of stored information efficiently",
+          "Support for voice commands and conversational interface"
+        ],
+        "main_components": [
+          "Information Storage Module",
+          "Task Management Module",
+          "Analytics and Insight Generation Module",
+          "User Interface with Conversational AI",
+          "Integration Layer for third-party apps"
+        ],
+        "assumptions": [
+          "The user has a smartphone for mobile access to the system.",
+          "The user is willing to share personal data with the system to enhance functionality.",
+          "Users are comfortable with digital integration of their personal data."
+        ],
+        "open_questions": [
+          "What level of privacy and security measures will be implemented to protect user data?",
+          "What are the specific analytic capabilities desired by the user?",
+          "How will the system adapt to changing user preferences and tasks over time?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.0,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "My AI Second Brain",
+            "verdict": "strongly_implied",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "The system name is a direct adaptation of the raw specification."
+          },
+          {
+            "field_path": "goal",
+            "value": "To create a digital assistant that functions as a 'second brain' for managing personal tasks, information, and insights.",
+            "verdict": "strongly_implied",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "The goal clarifies the role of the AI second brain as a personal assistant, which is implied by the raw specification's desire for an AI second brain."
+          },
+          {
+            "field_path": "users",
+            "value": "Individuals seeking enhanced personal productivity",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention users. However, the concept of a personal second brain supports personal productivity, but the specific user type is not specified."
+          },
+          {
+            "field_path": "users",
+            "value": "Tech-savvy users needing digital organization",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not specify user types; this is added without grounding."
+          },
+          {
+            "field_path": "users",
+            "value": "Busy professionals juggling numerous tasks",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not specify user types; this is added without grounding."
+          },
+          {
+            "field_path": "core_capabilities",
+            "value": "Store and categorize personal information and notes",
+            "verdict": "strongly_implied",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "An AI second brain would naturally store and categorize information as part of being a 'second brain' for organizing tasks."
+          },
+          {
+            "field_path": "core_capabilities",
+            "value": "Dynamic task management with prioritization",
+            "verdict": "strongly_implied",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "Task management and prioritization are strongly implied as functionalities of a 'second brain' assisting with life tasks."
+          },
+          {
+            "field_path": "core_capabilities",
+            "value": "Generate insights and analytics based on user data",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While providing insights could be part of a second brain, this specific functionality of generating analytics is not clearly grounded in the raw spec."
+          },
+          {
+            "field_path": "core_capabilities",
+            "value": "Integration with personal calendar and reminder systems",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Integration with calendars and reminders could be beneficial but is not specified in the raw specification."
+          },
+          {
+            "field_path": "core_capabilities",
+            "value": "Searched and retrieval of stored information efficiently",
+            "verdict": "strongly_implied",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "Efficient retrieval is a necessary aspect of managing stored information, thus strongly implied."
+          },
+          {
+            "field_path": "core_capabilities",
+            "value": "Support for voice commands and conversational interface",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Voice commands are not mentioned or implied in the raw specification and are introduced without grounding."
+          },
+          {
+            "field_path": "main_components",
+            "value": "Information Storage Module",
+            "verdict": "strongly_implied",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "Storage of information is a foundational requirement for a second brain."
+          },
+          {
+            "field_path": "main_components",
+            "value": "Task Management Module",
+            "verdict": "strongly_implied",
+            "source_quote": "I want an AI second brain for my life.",
+            "explanation": "Managing tasks is a necessary aspect of having a second brain."
+          },
+          {
+            "field_path": "main_components",
+            "value": "Analytics and Insight Generation Module",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "An analytics module is not directly implied but could be inferred to align with the concept of deriving insights."
+          },
+          {
+            "field_path": "main_components",
+            "value": "User Interface with Conversational AI",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Conversational AI is not mentioned or strongly implied in the raw specification."
+          },
+          {
+            "field_path": "main_components",
+            "value": "Integration Layer for third-party apps",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Integration with third-party apps is not specified or strongly implied by the raw specification."
+          },
+          {
+            "field_path": "assumptions",
+            "value": "The user has a smartphone for mobile access to the system.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw spec does not imply any device-specific assumption."
+          },
+          {
+            "field_path": "assumptions",
+            "value": "The user is willing to share personal data with the system to enhance functionality.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Sharing personal data could be inferred but is not explicitly required by the raw spec."
+          },
+          {
+            "field_path": "assumptions",
+            "value": "Users are comfortable with digital integration of their personal data.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Such a user acceptance assumption is added without reference or implication in the raw spec."
+          },
+          {
+            "field_path": "open_questions",
+            "value": "What level of privacy and security measures will be implemented to protect user data?",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While security is generally important, the raw spec doesn't state this concern."
+          },
+          {
+            "field_path": "open_questions",
+            "value": "What are the specific analytic capabilities desired by the user?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The raw specification does not mention the need for analytics, making this question appear speculative rather than grounded in expressed needs."
+          },
+          {
+            "field_path": "open_questions",
+            "value": "How will the system adapt to changing user preferences and tasks over time?",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "The adaptation feature is not mentioned or implied by the raw specification."
+          }
+        ],
+        "missing_requirements": [
+          "AI capabilities beyond data storage and task management"
+        ],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "users[1]",
+          "users[2]",
+          "core_capabilities[5]",
+          "main_components[3]",
+          "main_components[4]",
+          "assumptions[0]",
+          "assumptions[2]",
+          "open_questions[1]",
+          "open_questions[2]"
+        ],
+        "justified_inferences": [],
+        "weak_inferences": [
+          "users[0]",
+          "core_capabilities[2]",
+          "core_capabilities[3]",
+          "main_components[2]",
+          "assumptions[1]",
+          "open_questions[0]"
+        ],
+        "improvement_tip": "Ensure every feature and component directly relates to the AI second brain concept without incorporating unsupported assumptions or speculative capabilities.",
+        "failure_reason": "Failed grounding gate: missing=1, distorted=0, hallucinated=9, score=0.0"
+      },
+      "metrics": {
+        "total_fields": 22,
+        "explicit_support_rate": 0.0,
+        "strong_inference_rate": 0.3181818181818182,
+        "weak_inference_rate": 0.2727272727272727,
+        "unsupported_rate": 0.4090909090909091,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.3181818181818182,
+        "core_capability_coverage": 0.5,
+        "hallucination_count": 9,
+        "missing_count": 1,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 4,
+        "weak_assumption_count": 1,
+        "weak_open_question_count": 1,
+        "grounding_score": 0.36363636363636365,
+        "preservation_score": 0.0,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    }
+  ],
+  "run_convergence": {
+    "attempts": 3,
+    "converged": false,
+    "initial_risk_score": 1.0,
+    "final_risk_score": 1.0,
+    "risk_reduction": 0.0,
+    "initial_blocking_failures": 1,
+    "final_blocking_failures": 1,
+    "blocking_failures_removed": 0,
+    "initial_hallucination_count": 12,
+    "final_hallucination_count": 9,
+    "hallucinations_removed": 3,
+    "final_preservation_score": 0.0,
+    "final_core_capability_coverage": 0.5,
+    "convergence_score": 0.125
+  }
+}
