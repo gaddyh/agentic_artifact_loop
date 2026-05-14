@@ -1,0 +1,8 @@
+name,attempts,status,converged,final_risk,blocking,hallucinations,preservation,convergence
+spec_01_underspecified,3,FAIL,False,0.93,True,1,0.8,0.551
+spec_02_contradictory,2,PASS,True,0.0,False,0,1.0,1.0
+spec_03_non_crud_workflow,3,FAIL,False,1.0,True,2,0.6,0.46
+spec_04_operational_system,2,PASS,True,0.03,False,0,1.0,0.991
+spec_05_multi_actor,2,PASS,True,0.06,False,0,1.0,0.982
+spec_06_intentionally_vague,3,FAIL,False,1.0,True,2,0.35,0.1225
+spec_07_edge_case_constraints,3,FAIL,False,0.85,True,1,0.55,0.4875

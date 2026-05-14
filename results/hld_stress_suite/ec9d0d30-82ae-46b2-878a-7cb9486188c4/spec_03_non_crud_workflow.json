@@ -1,0 +1,678 @@
+{
+  "input": {
+    "text": "Create a classroom AI tutor that adapts question difficulty based on student frustration."
+  },
+  "final_output": {
+    "system_name": "Adaptive Classroom AI Tutor",
+    "goal": "To adapt the difficulty of questions in real-time based on a student's frustration levels during classroom interactions.",
+    "users": [
+      "Students",
+      "Teachers"
+    ],
+    "core_capabilities": [
+      "Detect student frustration levels",
+      "Adapt question difficulty according to frustration",
+      "Provide appropriate questions to students"
+    ],
+    "main_components": [
+      "Frustration Detection Module",
+      "Question Adaptation Engine",
+      "User Interface for students and teachers"
+    ],
+    "assumptions": [
+      "The system will have access to student interaction data necessary to infer frustration levels.",
+      "There will be a defined range of question difficulties available for adaptation."
+    ],
+    "open_questions": [
+      "What specific data points will be available to determine student frustration?",
+      "How will the adaptation of question difficulty be quantified and validated?"
+    ]
+  },
+  "final_evaluation": {
+    "score": 0.7,
+    "passed": false,
+    "field_grounding": [
+      {
+        "field_path": "system_name",
+        "value": "Adaptive Classroom AI Tutor",
+        "verdict": "explicitly_supported",
+        "source_quote": "Create a classroom AI tutor",
+        "explanation": "The system name is directly supported by the raw specification's requirement."
+      },
+      {
+        "field_path": "goal",
+        "value": "To adapt the difficulty of questions in real-time based on a student's frustration levels during classroom interactions.",
+        "verdict": "explicitly_supported",
+        "source_quote": "adapts question difficulty based on student frustration",
+        "explanation": "The goal is directly supported by the specification."
+      },
+      {
+        "field_path": "users[0]",
+        "value": "Students",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "It is strongly implied that students are users because the system adapts question difficulty based on their frustration."
+      },
+      {
+        "field_path": "users[1]",
+        "value": "Teachers",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "Teachers are not mentioned in the specification, though they may be involved in classroom settings. This is a weak inference."
+      },
+      {
+        "field_path": "core_capabilities[0]",
+        "value": "Detect student frustration levels",
+        "verdict": "explicitly_supported",
+        "source_quote": "adapts question difficulty based on student frustration",
+        "explanation": "Detecting frustration levels is necessary to adapt question difficulty, making it explicitly required."
+      },
+      {
+        "field_path": "core_capabilities[1]",
+        "value": "Adapt question difficulty according to frustration",
+        "verdict": "explicitly_supported",
+        "source_quote": "adapts question difficulty based on student frustration",
+        "explanation": "This capability is directly stated in the specification."
+      },
+      {
+        "field_path": "core_capabilities[2]",
+        "value": "Provide appropriate questions to students",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "Providing questions is a necessary mechanism to adapt difficulty, thus strongly implied."
+      },
+      {
+        "field_path": "main_components[0]",
+        "value": "Frustration Detection Module",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "A detection module is necessary to fulfill the requirement of detecting student frustration."
+      },
+      {
+        "field_path": "main_components[1]",
+        "value": "Question Adaptation Engine",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "An adaptation engine is necessary to change question difficulty."
+      },
+      {
+        "field_path": "main_components[2]",
+        "value": "User Interface for students and teachers",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "While plausible, there is no direct requirement for a UI for teachers in the specification."
+      },
+      {
+        "field_path": "assumptions[0]",
+        "value": "The system will have access to student interaction data necessary to infer frustration levels.",
+        "verdict": "explicitly_supported",
+        "source_quote": "adapts question difficulty based on student frustration",
+        "explanation": "Inferring frustration requires some form of interaction data, making this explicit."
+      },
+      {
+        "field_path": "assumptions[1]",
+        "value": "There will be a defined range of question difficulties available for adaptation.",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "Adapting question difficulty implies a range must exist."
+      },
+      {
+        "field_path": "open_questions[0]",
+        "value": "What specific data points will be available to determine student frustration?",
+        "verdict": "strongly_implied",
+        "source_quote": null,
+        "explanation": "The exact data points needed are not specified and are logically a point of inquiry."
+      },
+      {
+        "field_path": "open_questions[1]",
+        "value": "How will the adaptation of question difficulty be quantified and validated?",
+        "verdict": "weakly_implied",
+        "source_quote": null,
+        "explanation": "Quantifying and validating difficulty adaptation is not mentioned but is a reasonable inquiry."
+      }
+    ],
+    "missing_requirements": [],
+    "distorted_requirements": [],
+    "hallucinated_requirements": [
+      "users[1]",
+      "main_components[2]"
+    ],
+    "justified_inferences": [
+      "users[0]",
+      "core_capabilities[2]",
+      "main_components[0]",
+      "main_components[1]",
+      "assumptions[1]",
+      "open_questions[0]"
+    ],
+    "weak_inferences": [
+      "users[1]",
+      "main_components[2]",
+      "open_questions[1]"
+    ],
+    "improvement_tip": "Remove the mention of teachers as users and the user interface for teachers unless they are supported by additional requirements. Present weak inferences as open questions or assumptions, not confirmed attributes.",
+    "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=2, score=0.7"
+  },
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "output": {
+        "system_name": "Adaptive Classroom AI Tutor",
+        "goal": "To provide an AI-driven tutoring experience that adapts question difficulty based on the detected frustration levels of students.",
+        "users": [
+          "Students",
+          "Teachers"
+        ],
+        "core_capabilities": [
+          "Detect student frustration levels.",
+          "Adjust question difficulty dynamically based on student frustration.",
+          "Provide real-time feedback to students.",
+          "Record and analyze student performance data."
+        ],
+        "main_components": [
+          "Frustration Detection Module: Uses facial recognition and/or physiological sensors to gauge student frustration.",
+          "Difficulty Adjustment Engine: Modifies question difficulty in real-time based on inputs from the Frustration Detection Module.",
+          "Question Bank: A database of questions varying in difficulty across subjects.",
+          "Performance Analytics Dashboard: Interface for teachers to review student performance and adjustment patterns.",
+          "Student Interface: The interface where students interact with the AI Tutor and receive questions."
+        ],
+        "assumptions": [
+          "Students are equipped with the necessary hardware (e.g., devices with cameras) for frustration detection.",
+          "A varied question bank is available, allowing dynamic adjustments in question difficulty.",
+          "Teachers can access and interpret the data provided in the analytics dashboard."
+        ],
+        "open_questions": [
+          "What specific indicators of frustration will be used by the detection module?",
+          "How frequently should the system adjust the difficulty level of questions?",
+          "What privacy measures are necessary for handling and storing facial recognition data?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.45,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Adaptive Classroom AI Tutor",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The name 'Adaptive Classroom AI Tutor' is strongly implied by the raw specification directive to 'create a classroom AI tutor that adapts question difficulty.' It reflects the adaptive nature required by the specification."
+          },
+          {
+            "field_path": "goal",
+            "value": "To provide an AI-driven tutoring experience that adapts question difficulty based on the detected frustration levels of students.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+            "explanation": "The goal directly aligns with the raw specification to adapt question difficulty based on student frustration."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Students",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+            "explanation": "Students are explicitly mentioned in the context of their frustration being used to adapt question difficulty."
+          },
+          {
+            "field_path": "users[1]",
+            "value": "Teachers",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Teachers are not mentioned in the raw specification. The specification is centered around students and their interaction with the AI tutor."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Detect student frustration levels.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Detecting student frustration is strongly implied because adapting question difficulty based on frustration requires this capability."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Adjust question difficulty dynamically based on student frustration.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+            "explanation": "Directly matches the specification's requirement to adapt question difficulty based on student frustration."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Provide real-time feedback to students.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Providing real-time feedback is not mentioned or implied by the raw spec, which focuses on adapting question difficulty based strictly on frustration."
+          },
+          {
+            "field_path": "core_capabilities[3]",
+            "value": "Record and analyze student performance data.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "Recording and analyzing student performance data is not supported by the raw specification. The specification focuses solely on adapting question difficulty based on frustration."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Frustration Detection Module: Uses facial recognition and/or physiological sensors to gauge student frustration.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While a method to detect frustration is needed, the specific use of facial recognition and physiological sensors is a weak inference as the raw spec doesn't specify the method."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Difficulty Adjustment Engine: Modifies question difficulty in real-time based on inputs from the Frustration Detection Module.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A component to adjust question difficulty based on detected frustration is strongly implied by the requirement to adapt question difficulty based on student frustration."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "Question Bank: A database of questions varying in difficulty across subjects.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A question bank is strongly implied as it is necessary to adaptively select questions of varying difficulty levels."
+          },
+          {
+            "field_path": "main_components[3]",
+            "value": "Performance Analytics Dashboard: Interface for teachers to review student performance and adjustment patterns.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "There is no mention of teacher involvement or performance analysis in the raw specification."
+          },
+          {
+            "field_path": "main_components[4]",
+            "value": "Student Interface: The interface where students interact with the AI Tutor and receive questions.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "An interface for student interaction is strongly implied as the students need a medium to interact with the AI tutor."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "Students are equipped with the necessary hardware (e.g., devices with cameras) for frustration detection.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "This assumption is weakly implied as the specific mention of cameras or similar hardware is not in the raw spec."
+          },
+          {
+            "field_path": "assumptions[1]",
+            "value": "A varied question bank is available, allowing dynamic adjustments in question difficulty.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A varied question bank is necessary to meet the requirement of adapting question difficulty based on student frustration."
+          },
+          {
+            "field_path": "assumptions[2]",
+            "value": "Teachers can access and interpret the data provided in the analytics dashboard.",
+            "verdict": "unsupported",
+            "source_quote": null,
+            "explanation": "There is no specification content supporting teacher involvement or access to data dashboards."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What specific indicators of frustration will be used by the detection module?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Deciding on indicators of frustration is a necessary design decision implied by the requirement to detect frustration levels."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "How frequently should the system adjust the difficulty level of questions?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The frequency of adjustments is an implied concern arising from the requirement to make real-time adaptations."
+          },
+          {
+            "field_path": "open_questions[2]",
+            "value": "What privacy measures are necessary for handling and storing facial recognition data?",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Privacy concerns are a weak inference given the mention of possible facial recognition and sensor data handling, which the specification does not cover."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "users[1]",
+          "core_capabilities[2]",
+          "core_capabilities[3]",
+          "main_components[0]",
+          "main_components[3]",
+          "assumptions[0]",
+          "assumptions[2]"
+        ],
+        "justified_inferences": [],
+        "weak_inferences": [
+          "main_components[0]",
+          "assumptions[0]",
+          "open_questions[2]"
+        ],
+        "improvement_tip": "Focus on aligning closer to the raw specification by avoiding unsupported teacher roles, feedback, or performance analysis not mentioned. Ensure assumptions and open questions strictly reflect gaps or necessary inferences from the raw needs.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=7, score=0.45"
+      },
+      "metrics": {
+        "total_fields": 19,
+        "explicit_support_rate": 0.15789473684210525,
+        "strong_inference_rate": 0.42105263157894735,
+        "weak_inference_rate": 0.15789473684210525,
+        "unsupported_rate": 0.2631578947368421,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.15789473684210525,
+        "core_capability_coverage": 0.5,
+        "hallucination_count": 7,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 1,
+        "weak_assumption_count": 1,
+        "weak_open_question_count": 1,
+        "grounding_score": 0.5578947368421053,
+        "preservation_score": 0.0,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 2,
+      "output": {
+        "system_name": "Adaptive Classroom AI Tutor",
+        "goal": "To adapt question difficulty based on student frustration.",
+        "users": [
+          "Students"
+        ],
+        "core_capabilities": [
+          "Adapt question difficulty based on detected student frustration."
+        ],
+        "main_components": [
+          "Frustration Assessment Module: Detects signs of student frustration.",
+          "Question Adjustment Engine: Modifies the difficulty of subsequent questions."
+        ],
+        "assumptions": [
+          "The system can accurately detect student frustration states."
+        ],
+        "open_questions": [
+          "What specific indicators of frustration will be used to adjust difficulty?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.9,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Adaptive Classroom AI Tutor",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+            "explanation": "The system name \"Adaptive Classroom AI Tutor\" directly reflects the core functionality stated in the raw specification."
+          },
+          {
+            "field_path": "goal",
+            "value": "To adapt question difficulty based on student frustration.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+            "explanation": "The goal directly mirrors the raw specification."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Students",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+            "explanation": "The mention of 'student frustration' implies that students are the users of the system."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Adapt question difficulty based on detected student frustration.",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor that adapts question difficulty based on student frustration.",
+            "explanation": "This is the primary requirement stated in the raw specification."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Frustration Assessment Module: Detects signs of student frustration.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A mechanism to assess frustration is necessary to adapt difficulty based on student frustration as specified."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Question Adjustment Engine: Modifies the difficulty of subsequent questions.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "An engine or module to adjust question difficulty is necessary to fulfill the core specification."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "The system can accurately detect student frustration states.",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Although this assumption is plausible, the raw specification does not detail or assume accuracy of detecting frustration."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What specific indicators of frustration will be used to adjust difficulty?",
+            "verdict": "explicitly_supported",
+            "source_quote": "adapts question difficulty based on student frustration.",
+            "explanation": "The specification lacks details on how frustration is detected, thus making this an appropriate open question."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "\"The system can accurately detect student frustration states.\""
+        ],
+        "justified_inferences": [
+          "Frustration Assessment Module: Detects signs of student frustration.",
+          "Question Adjustment Engine: Modifies the difficulty of subsequent questions."
+        ],
+        "weak_inferences": [],
+        "improvement_tip": "Review assumptions to ensure they don't introduce unsupported claims. Ensure every inference presented as a system assumption is necessary and derived from the specification.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=1, score=0.9"
+      },
+      "metrics": {
+        "total_fields": 8,
+        "explicit_support_rate": 0.625,
+        "strong_inference_rate": 0.25,
+        "weak_inference_rate": 0.125,
+        "unsupported_rate": 0.0,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.625,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 1,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 0,
+        "weak_assumption_count": 1,
+        "weak_open_question_count": 0,
+        "grounding_score": 0.875,
+        "preservation_score": 0.8,
+        "risk_score": 0.6,
+        "blocking_failure": true
+      }
+    },
+    {
+      "attempt_number": 3,
+      "output": {
+        "system_name": "Adaptive Classroom AI Tutor",
+        "goal": "To adapt the difficulty of questions in real-time based on a student's frustration levels during classroom interactions.",
+        "users": [
+          "Students",
+          "Teachers"
+        ],
+        "core_capabilities": [
+          "Detect student frustration levels",
+          "Adapt question difficulty according to frustration",
+          "Provide appropriate questions to students"
+        ],
+        "main_components": [
+          "Frustration Detection Module",
+          "Question Adaptation Engine",
+          "User Interface for students and teachers"
+        ],
+        "assumptions": [
+          "The system will have access to student interaction data necessary to infer frustration levels.",
+          "There will be a defined range of question difficulties available for adaptation."
+        ],
+        "open_questions": [
+          "What specific data points will be available to determine student frustration?",
+          "How will the adaptation of question difficulty be quantified and validated?"
+        ]
+      },
+      "evaluation": {
+        "score": 0.7,
+        "passed": false,
+        "field_grounding": [
+          {
+            "field_path": "system_name",
+            "value": "Adaptive Classroom AI Tutor",
+            "verdict": "explicitly_supported",
+            "source_quote": "Create a classroom AI tutor",
+            "explanation": "The system name is directly supported by the raw specification's requirement."
+          },
+          {
+            "field_path": "goal",
+            "value": "To adapt the difficulty of questions in real-time based on a student's frustration levels during classroom interactions.",
+            "verdict": "explicitly_supported",
+            "source_quote": "adapts question difficulty based on student frustration",
+            "explanation": "The goal is directly supported by the specification."
+          },
+          {
+            "field_path": "users[0]",
+            "value": "Students",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "It is strongly implied that students are users because the system adapts question difficulty based on their frustration."
+          },
+          {
+            "field_path": "users[1]",
+            "value": "Teachers",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Teachers are not mentioned in the specification, though they may be involved in classroom settings. This is a weak inference."
+          },
+          {
+            "field_path": "core_capabilities[0]",
+            "value": "Detect student frustration levels",
+            "verdict": "explicitly_supported",
+            "source_quote": "adapts question difficulty based on student frustration",
+            "explanation": "Detecting frustration levels is necessary to adapt question difficulty, making it explicitly required."
+          },
+          {
+            "field_path": "core_capabilities[1]",
+            "value": "Adapt question difficulty according to frustration",
+            "verdict": "explicitly_supported",
+            "source_quote": "adapts question difficulty based on student frustration",
+            "explanation": "This capability is directly stated in the specification."
+          },
+          {
+            "field_path": "core_capabilities[2]",
+            "value": "Provide appropriate questions to students",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Providing questions is a necessary mechanism to adapt difficulty, thus strongly implied."
+          },
+          {
+            "field_path": "main_components[0]",
+            "value": "Frustration Detection Module",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "A detection module is necessary to fulfill the requirement of detecting student frustration."
+          },
+          {
+            "field_path": "main_components[1]",
+            "value": "Question Adaptation Engine",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "An adaptation engine is necessary to change question difficulty."
+          },
+          {
+            "field_path": "main_components[2]",
+            "value": "User Interface for students and teachers",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "While plausible, there is no direct requirement for a UI for teachers in the specification."
+          },
+          {
+            "field_path": "assumptions[0]",
+            "value": "The system will have access to student interaction data necessary to infer frustration levels.",
+            "verdict": "explicitly_supported",
+            "source_quote": "adapts question difficulty based on student frustration",
+            "explanation": "Inferring frustration requires some form of interaction data, making this explicit."
+          },
+          {
+            "field_path": "assumptions[1]",
+            "value": "There will be a defined range of question difficulties available for adaptation.",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "Adapting question difficulty implies a range must exist."
+          },
+          {
+            "field_path": "open_questions[0]",
+            "value": "What specific data points will be available to determine student frustration?",
+            "verdict": "strongly_implied",
+            "source_quote": null,
+            "explanation": "The exact data points needed are not specified and are logically a point of inquiry."
+          },
+          {
+            "field_path": "open_questions[1]",
+            "value": "How will the adaptation of question difficulty be quantified and validated?",
+            "verdict": "weakly_implied",
+            "source_quote": null,
+            "explanation": "Quantifying and validating difficulty adaptation is not mentioned but is a reasonable inquiry."
+          }
+        ],
+        "missing_requirements": [],
+        "distorted_requirements": [],
+        "hallucinated_requirements": [
+          "users[1]",
+          "main_components[2]"
+        ],
+        "justified_inferences": [
+          "users[0]",
+          "core_capabilities[2]",
+          "main_components[0]",
+          "main_components[1]",
+          "assumptions[1]",
+          "open_questions[0]"
+        ],
+        "weak_inferences": [
+          "users[1]",
+          "main_components[2]",
+          "open_questions[1]"
+        ],
+        "improvement_tip": "Remove the mention of teachers as users and the user interface for teachers unless they are supported by additional requirements. Present weak inferences as open questions or assumptions, not confirmed attributes.",
+        "failure_reason": "Failed grounding gate: missing=0, distorted=0, hallucinated=2, score=0.7"
+      },
+      "metrics": {
+        "total_fields": 14,
+        "explicit_support_rate": 0.35714285714285715,
+        "strong_inference_rate": 0.42857142857142855,
+        "weak_inference_rate": 0.21428571428571427,
+        "unsupported_rate": 0.0,
+        "contradiction_rate": 0.0,
+        "source_quote_coverage": 0.35714285714285715,
+        "core_capability_coverage": 1.0,
+        "hallucination_count": 2,
+        "missing_count": 0,
+        "distortion_count": 0,
+        "weak_confirmed_claims_count": 2,
+        "weak_assumption_count": 0,
+        "weak_open_question_count": 1,
+        "grounding_score": 0.7857142857142857,
+        "preservation_score": 0.6,
+        "risk_score": 1.0,
+        "blocking_failure": true
+      }
+    }
+  ],
+  "run_convergence": {
+    "attempts": 3,
+    "converged": false,
+    "status": "FAIL",
+    "initial_risk_score": 1.0,
+    "final_risk_score": 1.0,
+    "risk_reduction": 0.0,
+    "initial_blocking_failures": 1,
+    "final_blocking_failures": 1,
+    "blocking_failures_removed": 0,
+    "initial_hallucination_count": 7,
+    "final_hallucination_count": 2,
+    "hallucinations_removed": 5,
+    "final_preservation_score": 0.6,
+    "final_core_capability_coverage": 1.0,
+    "convergence_score": 0.46
+  }
+}

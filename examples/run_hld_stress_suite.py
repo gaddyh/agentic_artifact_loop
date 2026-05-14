@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+import uuid
 
 from artifact_loop.models import RawSpec
 from artifact_loop.high_architect import HighArchitectStage
@@ -45,7 +46,7 @@ SPECS = [
     ),
 ]
 
-RESULTS_DIR = os.path.join(
+RESULTS_BASE = os.path.join(
     os.path.dirname(__file__), "..", "results", "hld_stress_suite"
 )
 
@@ -70,7 +71,10 @@ def fmt_row(values: list) -> str:
 
 
 def main():
-    os.makedirs(RESULTS_DIR, exist_ok=True)
+    run_id = str(uuid.uuid4())
+    results_dir = os.path.join(RESULTS_BASE, run_id)
+    os.makedirs(results_dir, exist_ok=True)
+    print(f"Run ID: {run_id}")
 
     stage = HighArchitectStage(threshold=0.95, risk_threshold=0.35, max_attempts=3)
 
@@ -81,7 +85,7 @@ def main():
         raw = RawSpec(text=spec_text)
         result = stage.run(raw)
 
-        out_path = os.path.join(RESULTS_DIR, f"{slug}.json")
+        out_path = os.path.join(results_dir, f"{slug}.json")
         with open(out_path, "w") as f:
             json.dump(result.model_dump(), f, indent=2)
         print(f"    Saved → {out_path}")
@@ -109,7 +113,7 @@ def main():
         print(fmt_row(row))
     print()
 
-    csv_path = os.path.join(RESULTS_DIR, "summary.csv")
+    csv_path = os.path.join(results_dir, "summary.csv")
     with open(csv_path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(HEADERS)
