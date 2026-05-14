@@ -178,6 +178,18 @@ The purpose is to test whether:
 - metrics remain meaningful
 - convergence correlates with semantic quality
 
+### Latest Run
+
+| Spec | Attempts | Converged | Risk | Blocking | Hallucinations | Preservation | Weak Assumptions | Weak Open Qs | Convergence |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| `spec_01_underspecified` | 3 | ✗ | 1.00 | ✓ | 2 | 0.60 | 0 | 0 | 0.398 |
+| `spec_02_contradictory` | 3 | ✗ | 0.80 | ✓ | 1 | 0.80 | 0 | 0 | 0.590 |
+| `spec_03_non_crud_workflow` | 3 | ✗ | 1.00 | ✓ | 6 | 0.00 | 0 | 0 | 0.167 |
+| `spec_04_operational_system` | 2 | ✓ | 0.00 | ✗ | 0 | 1.00 | 0 | 0 | 1.000 |
+| `spec_05_multi_actor` | 3 | ✓ | 0.06 | ✗ | 0 | 1.00 | 0 | 2 | 0.982 |
+| `spec_06_intentionally_vague` | 3 | ✗ | 1.00 | ✓ | 9 | 0.00 | 1 | 1 | 0.125 |
+| `spec_07_edge_case_constraints` | 2 | ✓ | 0.10 | ✗ | 0 | 1.00 | 1 | 0 | 0.970 |
+
 ---
 
 ## Repository Structure
