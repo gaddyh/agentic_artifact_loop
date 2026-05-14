@@ -52,13 +52,12 @@ RESULTS_DIR = os.path.join(
 COL_WIDTHS = {
     "name": 32,
     "attempts": 8,
+    "status": 10,
     "converged": 9,
     "final_risk": 10,
     "blocking": 8,
     "hallucinations": 14,
     "preservation": 13,
-    "weak_assumptions": 17,
-    "weak_open_q": 11,
     "convergence": 11,
 }
 
@@ -93,13 +92,12 @@ def main():
         rows.append([
             slug,
             m.attempts,
+            m.status,
             m.converged,
             round(m.final_risk_score, 3),
             lm.blocking_failure,
             lm.hallucination_count,
             round(lm.preservation_score, 3),
-            lm.weak_assumption_count,
-            lm.weak_open_question_count,
             round(m.convergence_score, 4),
         ])
 

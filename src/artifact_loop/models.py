@@ -76,6 +76,7 @@ class EvaluationMetrics(BaseModel):
 class RunConvergenceMetrics(BaseModel):
     attempts: int
     converged: bool
+    status: Literal["PASS", "PASS_WARN", "FAIL"]
 
     initial_risk_score: float
     final_risk_score: float

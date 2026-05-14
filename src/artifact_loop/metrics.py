@@ -130,6 +130,13 @@ def compute_run_convergence(attempts: list[StageAttempt]) -> RunConvergenceMetri
         and last.risk_score <= 0.35
     )
 
+    if last.blocking_failure:
+        status = "FAIL"
+    elif last.risk_score > 0.35:
+        status = "PASS_WARN"
+    else:
+        status = "PASS"
+
     convergence_score = (
         0.35 * last.preservation_score
         + 0.25 * last.core_capability_coverage
@@ -141,6 +148,7 @@ def compute_run_convergence(attempts: list[StageAttempt]) -> RunConvergenceMetri
     return RunConvergenceMetrics(
         attempts=len(attempts),
         converged=converged,
+        status=status,
 
         initial_risk_score=first.risk_score,
         final_risk_score=last.risk_score,
